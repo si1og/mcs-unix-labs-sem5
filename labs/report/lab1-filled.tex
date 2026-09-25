@@ -1,0 +1,67 @@
+\documentclass[a4paper]{article}
+
+\usepackage{poly-report}
+\geometry{margin=0pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\includepdf[pages=1]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=2,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-1-1-4}{23mm}{105mm}
+        \exerciseAnchor{exercise-1-1-6}{23mm}{157mm}
+        \exerciseAnchor{exercise-1-1-8}{23mm}{210mm}
+        %
+        \screenAt[height=22mm,keepaspectratio]
+            {exercise-1-1-4}{0mm}{0mm}{164mm}{img/lab1/1.1_4.png}
+        %
+        \screenAt[height=22mm,keepaspectratio]
+            {exercise-1-1-6}{0mm}{0mm}{164mm}{img/lab1/1.1_6.png}
+        %
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-1-1-8}{0mm}{0mm}{164mm}{img/lab1/1.1_8.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=3,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-1-2-2}{33mm}{6mm}
+        \exerciseAnchor{exercise-1-2-4}{33mm}{47mm}
+        \exerciseAnchor{exercise-1-2-6}{66mm}{94mm}
+        %
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-1-2-2}{0mm}{0mm}{45mm}{img/lab1/1.2_2_2.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-1-2-2}{49mm}{0mm}{45mm}{img/lab1/1.2_2_4.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-1-2-2}{98mm}{0mm}{45mm}{img/lab1/1.2_2_6.png}
+        \screenAt[height=17mm,keepaspectratio]
+        %
+            {exercise-1-2-4}{0mm}{0mm}{45mm}{img/lab1/1.2_4_2.png}
+        \screenAt[height=17mm,keepaspectratio]
+            {exercise-1-2-4}{49mm}{0mm}{45mm}{img/lab1/1.2_4_4.png}
+        \screenAt[height=17mm,keepaspectratio]
+            {exercise-1-2-4}{98mm}{0mm}{45mm}{img/lab1/1.2_4_6.png}
+        %
+        \fill[white]
+            ([xshift=20mm,yshift=-94mm]current page.north west)
+            rectangle
+            ([xshift=200mm,yshift=-115mm]current page.north west);
+        %
+        \screenAt[height=21mm,keepaspectratio]
+            {exercise-1-2-6}{0mm}{0mm}{78mm}{img/lab1/1.2_6.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[pages=4-last]{tex/graphics/labs.pdf}
+
+\end{document}
