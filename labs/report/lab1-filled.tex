@@ -183,7 +183,7 @@
         %
         \screenAt[height=28mm,keepaspectratio]
             {exercise-2-1-2}{0mm}{86mm}{150mm}{img/lab1/2.1_2_c.png}
-        
+        %
         \screenAt[height=28mm,keepaspectratio]
             {exercise-2-1-2}{0mm}{130mm}{150mm}{img/lab1/2.1_2_d.png}
         %
@@ -191,6 +191,44 @@
   }
 ]{tex/graphics/labs.pdf}
 
-\includepdf[pages=8-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=8,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-2-1-3}{23mm}{20mm}
+        \exerciseAnchor{exercise-2-1-4}{23mm}{60mm}
+        \exerciseAnchor{exercise-2-1-5}{23mm}{105mm}
+        \exerciseAnchor{exercise-2-1-6}{23mm}{145mm}
+        %
+        \screenAt[height=24mm,keepaspectratio]
+            {exercise-2-1-3}{0mm}{0mm}{164mm}{img/lab1/2.1_3.png}
+        %
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{0mm}{164mm}{img/lab1/2.1_4_1.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{5mm}{164mm}{img/lab1/2.1_4_2.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{10mm}{164mm}{img/lab1/2.1_4_3.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{15mm}{164mm}{img/lab1/2.1_4_4.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{20mm}{164mm}{img/lab1/2.1_4_5.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{0mm}{25mm}{164mm}{img/lab1/2.1_4_6.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{80mm}{0mm}{164mm}{img/lab1/2.1_4_7.png}
+        \screenAt[height=5mm,keepaspectratio]
+            {exercise-2-1-4}{80mm}{5mm}{164mm}{img/lab1/2.1_4_8.png}
+        %
+        \screenAt[height=24mm,keepaspectratio]
+            {exercise-2-1-5}{0mm}{0mm}{164mm}{img/lab1/2.1_5.png}
+        %
+        \screenAt[height=24mm,keepaspectratio]
+            {exercise-2-1-6}{0mm}{0mm}{164mm}{img/lab1/2.1_6.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[pages=9-last]{tex/graphics/labs.pdf}
 
 \end{document}
