@@ -243,6 +243,42 @@
   }
 ]{tex/graphics/labs.pdf}
 
-\includepdf[pages=9-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=9,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-2-3-1}{32mm}{45mm}
+        %
+        \screenAt[height=17mm,keepaspectratio]
+            {exercise-2-3-1}{0mm}{0mm}{164mm}{img/lab1/2.3_1.png}
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-92mm]current page.north west)
+            {Построчно: \texttt{Up} и \texttt{Down} (\texttt{Ctrl+P} и \texttt{Ctrl+N}); постранично: \texttt{Page Up} и \texttt{Page Down} (\texttt{Backspace} и \texttt{Space})};
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-113mm]current page.north west)
+            {\texttt{[}, \texttt{]}, \texttt{p}, \texttt{n}, \texttt{u}, \texttt{l}, \texttt{t}, \texttt{d}, \texttt{g}, \texttt{Home}, \texttt{End}};
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-133mm]current page.north west)
+            {\texttt{1--9}, \texttt{0}, \texttt{m}; \texttt{Tab}, \texttt{Shift-Tab}, \texttt{Enter}};
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-154mm]current page.north west)
+            {\texttt{f}/\texttt{r}; \texttt{Tab}, \texttt{Shift-Tab}, \texttt{Enter}; \texttt{l}};
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-174mm]current page.north west)
+            {\texttt{q}, \texttt{C-x C-c}};
+        %
+        \node[anchor=north west,font=\fontsize{8}{10}\selectfont]
+            at ([xshift=46mm,yshift=-195mm]current page.north west)
+            {\texttt{s}/\texttt{/}, \texttt{?}, \texttt{\{}, \texttt{\}}, \texttt{C-s}, \texttt{C-r}, \texttt{M-/}, \texttt{M-\{}, \texttt{M-\}}};
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[pages=10-last]{tex/graphics/labs.pdf}
 
 \end{document}
