@@ -165,6 +165,32 @@
   }
 ]{tex/graphics/labs.pdf}
 
-\includepdf[pages=7-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=7,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-2-1-1}{32mm}{54mm}
+        \exerciseAnchor{exercise-2-1-2}{44mm}{118mm}
+        %
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-2-1-1}{0mm}{0mm}{164mm}{img/lab1/2.1_1.png}
+        %
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-2-1-2}{0mm}{0mm}{164mm}{img/lab1/2.1_2_a.png}
+        %
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-2-1-2}{0mm}{42mm}{50mm}{img/lab1/2.1_2_b.png}
+        %
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-2-1-2}{0mm}{86mm}{150mm}{img/lab1/2.1_2_c.png}
+        
+        \screenAt[height=28mm,keepaspectratio]
+            {exercise-2-1-2}{0mm}{130mm}{150mm}{img/lab1/2.1_2_d.png}
+        %
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[pages=8-last]{tex/graphics/labs.pdf}
 
 \end{document}
