@@ -325,6 +325,50 @@
   }
 ]{tex/graphics/labs.pdf}
 
-\includepdf[pages=11-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=11,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-3-1-11}{32mm}{10mm}
+        \exerciseAnchor{exercise-3-1-13}{32mm}{64mm}
+        \exerciseAnchor{exercise-3-2-2}{32mm}{137mm}
+        \exerciseAnchor{exercise-3-2-3}{32mm}{205mm}
+        \exerciseAnchor{exercise-3-2-5}{32mm}{262mm}
+        %
+        \screenAt[height=20mm,keepaspectratio]
+            {exercise-3-1-11}{0mm}{0mm}{164mm}{img/lab1/3.1_11.png}
+        %
+        \screenAt[height=11mm,keepaspectratio]
+            {exercise-3-1-13}{0mm}{0mm}{164mm}{img/lab1/3.1_13.png}
+        %
+        \screenAt[height=24mm,keepaspectratio]
+            {exercise-3-2-2}{0mm}{0mm}{164mm}{img/lab1/3.2_2.png}
+        %
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-3-2-3}{0mm}{0mm}{164mm}{img/lab1/3.2_3.png}
+        %
+        \screenAt[height=13mm,keepaspectratio]
+            {exercise-3-2-5}{0mm}{0mm}{164mm}{img/lab1/3.2_5.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=12,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-3-2-6}{23mm}{41mm}
+        \exerciseAnchor{exercise-3-2-8}{23mm}{96mm}
+        %
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-3-2-6}{0mm}{0mm}{164mm}{img/lab1/3.2_6.png}
+        %
+        \screenAt[height=22mm,keepaspectratio]
+            {exercise-3-2-8}{0mm}{0mm}{164mm}{img/lab1/3.2_8.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[pages=13-last]{tex/graphics/labs.pdf}
 
 \end{document}
