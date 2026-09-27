@@ -1,6 +1,8 @@
 \documentclass[a4paper]{article}
 
 \usepackage{poly-report}
+\usepackage{fontspec}
+\setmainfont{Arial}
 \geometry{margin=0pt}
 
 \pagestyle{empty}
@@ -531,6 +533,65 @@
 \end{tikzpicture}
 
 \clearpage
-\includepdf[pages=14-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=14,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-4-3-ab}{36mm}{50mm}
+        \exerciseAnchor{exercise-4-3-b}{36mm}{83mm}
+        \exerciseAnchor{exercise-4-3-c}{36mm}{116mm}
+        \exerciseAnchor{exercise-4-3-d}{36mm}{149mm}
+        \exerciseAnchor{exercise-4-3-e}{36mm}{181mm}
+        \exerciseAnchor{exercise-4-3-f}{36mm}{214mm}
+        \exerciseAnchor{exercise-4-3-g}{36mm}{247mm}
+        %
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-ab}{0mm}{0mm}{164mm}{img/lab1/4.3_ab_home_pwd.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-b}{0mm}{0mm}{164mm}{img/lab1/4.3_ab_home_pwd.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-c}{0mm}{0mm}{164mm}{img/lab1/4.3_c_ls_a.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-d}{0mm}{0mm}{164mm}{img/lab1/4.3_d_mkdir_subdir.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-e}{0mm}{0mm}{164mm}{img/lab1/4.3_e_cd_subdir.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-f}{0mm}{0mm}{164mm}{img/lab1/4.3_f_touch_myfirstfile.png}
+        \screenAt[height=16mm,keepaspectratio]
+            {exercise-4-3-g}{0mm}{0mm}{80mm}{img/lab1/4.3_g_symlink.png}
+        \screenAt[height=16mm,keepaspectratio]
+            {exercise-4-3-g}{84mm}{0mm}{80mm}{img/lab1/4.3_g_hardlink.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=15,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-4-3-h}{45mm}{0mm}
+        \exerciseAnchor{exercise-4-3-i}{45mm}{29mm}
+        \exerciseAnchor{exercise-4-3-j}{45mm}{67mm}
+        \exerciseAnchor{exercise-4-3-k}{45mm}{100mm}
+        \exerciseAnchor{exercise-4-3-l}{45mm}{132mm}
+        %
+        \screenAt[height=16mm,keepaspectratio]
+            {exercise-4-3-h}{0mm}{0mm}{164mm}{img/lab1/4.3_h_move_myfirstfile.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-i}{0mm}{0mm}{164mm}{img/lab1/4.3_i_remove_remaining.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-j}{0mm}{0mm}{164mm}{img/lab1/4.3_j_cleanup.png}
+        \screenAt[height=18mm,keepaspectratio]
+            {exercise-4-3-k}{0mm}{0mm}{164mm}{img/lab1/4.3_k_mkfifo.png}
+        \screenAt[height=16mm,keepaspectratio]
+            {exercise-4-3-l}{0mm}{0mm}{104mm}{img/lab1/4.3_l_copy_cdrom.png}
+        \screenAt[height=16mm,keepaspectratio]
+            {exercise-4-3-l}{108mm}{0mm}{56mm}{img/lab1/4.3_l_result.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\clearpage
+\includepdf[pages=16-last]{tex/graphics/labs.pdf}
 
 \end{document}
