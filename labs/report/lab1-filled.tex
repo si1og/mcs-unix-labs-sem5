@@ -643,7 +643,96 @@
   }
 ]{tex/graphics/labs.pdf}
 
+\includepdf[
+  pages=17,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-5-1-1}{32mm}{49mm}
+        \exerciseAnchor{exercise-5-1-2-row-1}{32mm}{96mm}
+        \exerciseAnchor{exercise-5-1-2-row-2}{32mm}{108mm}
+        \exerciseAnchor{exercise-5-2-1}{32mm}{160mm}
+        \exerciseAnchor{exercise-5-2-2a}{46mm}{216mm}
+        \exerciseAnchor{exercise-5-2-2b}{46mm}{266mm}
+        %
+        \screenAt[height=25mm,keepaspectratio]
+            {exercise-5-1-1}{0mm}{0mm}{164mm}{img/lab1/5.1_1_permissions_owners.png}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-1-2-row-1}{0mm}{0mm}{55mm}{img/lab1/5.1_2_touch_giftfile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-1-2-row-1}{59mm}{0mm}{105mm}{img/lab1/5.1_2_ls_giftfile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-1-2-row-2}{0mm}{0mm}{80mm}{img/lab1/5.1_2_chown_denied.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-1-2-row-2}{84mm}{0mm}{80mm}{img/lab1/5.1_2_chgrp_denied.png}
+        %
+        \screenAt[height=12mm,keepaspectratio]
+            {exercise-5-2-1}{0mm}{0mm}{55mm}{img/lab1/5.2_1_touch_newfile.png}
+        \screenAt[height=15mm,keepaspectratio]
+            {exercise-5-2-1}{59mm}{0mm}{105mm}{img/lab1/5.2_1_ls_newfile.png}
+        \screenAt[height=14mm,keepaspectratio]
+            {exercise-5-2-2a}{0mm}{0mm}{32mm}{img/lab1/5.2_2a_umask.png}
+        \screenAt[height=14mm,keepaspectratio]
+            {exercise-5-2-2a}{36mm}{0mm}{114mm}{img/lab1/5.2_2a_umask_symbolic.png}
+        \screenAt[height=11mm,keepaspectratio]
+            {exercise-5-2-2b}{0mm}{0mm}{38mm}{img/lab1/5.2_2b_umask_000.png}
+        \screenAt[height=11mm,keepaspectratio]
+            {exercise-5-2-2b}{42mm}{0mm}{48mm}{img/lab1/5.2_2b_touch_defaultfile.png}
+        \screenAt[height=11mm,keepaspectratio]
+            {exercise-5-2-2b}{94mm}{0mm}{56mm}{img/lab1/5.2_2b_ls_defaultfile.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=18,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \exerciseAnchor{exercise-5-2-2c}{35mm}{27mm}
+        \exerciseAnchor{exercise-5-2-3a}{35mm}{72mm}
+        \exerciseAnchor{exercise-5-2-3b}{35mm}{109mm}
+        \exerciseAnchor{exercise-5-2-3c}{35mm}{145mm}
+        \exerciseAnchor{exercise-5-2-3d}{35mm}{181mm}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-2c}{0mm}{0mm}{38mm}{img/lab1/5.2_2c_umask_777.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-2c}{42mm}{0mm}{48mm}{img/lab1/5.2_2c_touch_maskedfile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-2c}{94mm}{0mm}{56mm}{img/lab1/5.2_2c_ls_maskedfile.png}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3a}{0mm}{0mm}{40mm}{img/lab1/5.2_3a_touch_privatefile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3a}{44mm}{0mm}{45mm}{img/lab1/5.2_3a_chmod_privatefile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3a}{93mm}{0mm}{57mm}{img/lab1/5.2_3a_ls_privatefile.png}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3b}{0mm}{0mm}{40mm}{img/lab1/5.2_3b_touch_publicfile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3b}{44mm}{0mm}{45mm}{img/lab1/5.2_3b_chmod_publicfile.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3b}{93mm}{0mm}{57mm}{img/lab1/5.2_3b_ls_publicfile.png}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3c}{0mm}{0mm}{40mm}{img/lab1/5.2_3c_mkdir_groupsubdir.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3c}{44mm}{0mm}{45mm}{img/lab1/5.2_3c_chmod_groupsubdir.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3c}{93mm}{0mm}{57mm}{img/lab1/5.2_3c_ls_groupsubdir.png}
+        %
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3d}{0mm}{0mm}{40mm}{img/lab1/5.2_3d_mkdir_publicdir.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3d}{44mm}{0mm}{45mm}{img/lab1/5.2_3d_chmod_publicdir.png}
+        \screenAt[height=10mm,keepaspectratio]
+            {exercise-5-2-3d}{93mm}{0mm}{57mm}{img/lab1/5.2_3d_ls_publicdir.png}
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
 \clearpage
-\includepdf[pages=17-last]{tex/graphics/labs.pdf}
+\includepdf[pages=19-last]{tex/graphics/labs.pdf}
 
 \end{document}
