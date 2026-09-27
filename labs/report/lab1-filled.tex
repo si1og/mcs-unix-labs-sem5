@@ -369,6 +369,168 @@
   }
 ]{tex/graphics/labs.pdf}
 
-\includepdf[pages=13-last]{tex/graphics/labs.pdf}
+\includepdf[
+  pages=13,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north west,font=\fontsize{10}{12}\selectfont]
+            at ([xshift=45mm,yshift=-74mm]current page.north west)
+            {Структура и назначение каталогов приведены на следующей странице (13а).};
+        %
+        \node[anchor=north west,font=\fontsize{10}{12}\selectfont]
+            at ([xshift=33mm,yshift=-177mm]current page.north west)
+            {Обозначения типов и полей \texttt{ls -l} приведены на странице 13б.};
+        %
+        \node[anchor=north west,font=\fontsize{10}{12}\selectfont]
+            at ([xshift=33mm,yshift=-224mm]current page.north west)
+            {Результаты \texttt{stat} и \texttt{file} приведены на страницах 13в--13д.};
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west)
+        {Структура файловой системы};
+    %
+    \node[anchor=north west,text width=190mm,align=left,font=\fontsize{8}{10}\selectfont]
+        at ([xshift=10mm,yshift=-20mm]current page.north west)
+        {\texttt{/} --- корень; \texttt{/etc} --- системные настройки; \texttt{/home} --- домашние каталоги;
+        \texttt{/usr} --- программы, библиотеки и общие данные; \texttt{/var} --- изменяемые данные и журналы;
+        \texttt{/tmp} --- временные файлы; \texttt{/dev} --- файлы устройств; \texttt{/proc} и \texttt{/sys} --- интерфейсы ядра;
+        \texttt{/run} --- данные работающих служб; \texttt{/boot} --- файлы загрузки.};
+    %
+    \exerciseAnchor{exercise-4-1-root-1}{10mm}{43mm}
+    \exerciseAnchor{exercise-4-1-etc}{10mm}{55mm}
+    \exerciseAnchor{exercise-4-1-usr}{10mm}{118mm}
+    \exerciseAnchor{exercise-4-1-var}{10mm}{141mm}
+    \exerciseAnchor{exercise-4-1-home}{10mm}{164mm}
+    \exerciseAnchor{exercise-4-1-home-user}{10mm}{199mm}
+    %
+    \screenAt[height=10mm,keepaspectratio]
+        {exercise-4-1-root-1}{0mm}{0mm}{190mm}{img/lab1/4.1_1_root_1.png}
+    \screenAt[height=59mm,keepaspectratio]
+        {exercise-4-1-etc}{0mm}{0mm}{190mm}{img/lab1/4.1_2_etc.png}
+    \screenAt[height=20mm,keepaspectratio]
+        {exercise-4-1-usr}{0mm}{0mm}{190mm}{img/lab1/4.1_2_usr.png}
+    \screenAt[height=20mm,keepaspectratio]
+        {exercise-4-1-var}{0mm}{0mm}{190mm}{img/lab1/4.1_2_var.png}
+    \screenAt[height=31mm,keepaspectratio]
+        {exercise-4-1-home}{0mm}{0mm}{190mm}{img/lab1/4.1_2_home.png}
+    \screenAt[height=67mm,keepaspectratio]
+        {exercise-4-1-home-user}{0mm}{0mm}{190mm}{img/lab1/4.1_2_home_user.png}
+    %
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {13а};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west)
+        {Отображение типов файлов};
+    %
+    \node[anchor=north west,text width=190mm,align=left,font=\fontsize{8}{10}\selectfont]
+        at ([xshift=10mm,yshift=-20mm]current page.north west)
+        {В выводе \texttt{ls -l} первый символ обозначает тип: \texttt{-} --- обычный файл,
+        \texttt{d} --- каталог, \texttt{b} --- блочное устройство, \texttt{c} --- символьное устройство,
+        \texttt{p} --- FIFO, \texttt{s} --- сокет, \texttt{l} --- символическая ссылка. Далее указаны права доступа,
+        число жёстких ссылок, владелец, группа, размер (для устройства --- major/minor), время изменения и имя.
+        У символической ссылки после имени выводится \texttt{->} и путь к цели.};
+    %
+    \exerciseAnchor{exercise-4-2-ls}{10mm}{47mm}
+    \exerciseAnchor{exercise-4-2-home-ls}{10mm}{116mm}
+    %
+    \screenAt[height=62mm,keepaspectratio]
+        {exercise-4-2-ls}{0mm}{0mm}{190mm}{img/lab1/4.2_2_ls_types.png}
+    \screenAt[height=145mm,keepaspectratio]
+        {exercise-4-2-home-ls}{0mm}{0mm}{190mm}{img/lab1/4.1_2_home_user.png}
+    %
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {13б};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west)
+        {Метаданные файлов};
+    %
+    \exerciseAnchor{exercise-4-2-fstab-stat}{10mm}{24mm}
+    \exerciseAnchor{exercise-4-2-fstab-file}{10mm}{78mm}
+    \exerciseAnchor{exercise-4-2-bash}{10mm}{100mm}
+    \exerciseAnchor{exercise-4-2-apropos}{10mm}{166mm}
+    \exerciseAnchor{exercise-4-2-tmp}{10mm}{225mm}
+    %
+    \screenAt[height=50mm,keepaspectratio]
+        {exercise-4-2-fstab-stat}{0mm}{0mm}{190mm}{img/lab1/4.2_3_regular_fstab_stat.png}
+    \screenAt[height=18mm,keepaspectratio]
+        {exercise-4-2-fstab-file}{0mm}{0mm}{190mm}{img/lab1/4.2_3_regular_fstab_file.png}
+    \screenAt[height=62mm,keepaspectratio]
+        {exercise-4-2-bash}{0mm}{0mm}{190mm}{img/lab1/4.2_3_regular_bash.png}
+    \screenAt[height=55mm,keepaspectratio]
+        {exercise-4-2-apropos}{0mm}{0mm}{190mm}{img/lab1/4.2_3_symlink_apropos.png}
+    \screenAt[height=48mm,keepaspectratio]
+        {exercise-4-2-tmp}{0mm}{0mm}{190mm}{img/lab1/4.2_3_directory_tmp.png}
+    %
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {13в};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west)
+        {Метаданные устройств};
+    %
+    \exerciseAnchor{exercise-4-2-sda}{10mm}{24mm}
+    \exerciseAnchor{exercise-4-2-tty}{10mm}{104mm}
+    %
+    \screenAt[height=76mm,keepaspectratio]
+        {exercise-4-2-sda}{0mm}{0mm}{190mm}{img/lab1/4.2_3_device_block_sda.png}
+    \screenAt[height=76mm,keepaspectratio]
+        {exercise-4-2-tty}{0mm}{0mm}{190mm}{img/lab1/4.2_3_device_char_tty1.png}
+    %
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {13г};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west)
+        {FIFO, сокет и символическая ссылка};
+    %
+    \exerciseAnchor{exercise-4-2-fifo-ls}{10mm}{24mm}
+    \exerciseAnchor{exercise-4-2-fifo-stat}{10mm}{73mm}
+    \exerciseAnchor{exercise-4-2-socket}{10mm}{134mm}
+    \exerciseAnchor{exercise-4-2-cdrom}{10mm}{211mm}
+    %
+    \screenAt[height=45mm,keepaspectratio]
+        {exercise-4-2-fifo-ls}{0mm}{0mm}{190mm}{img/lab1/4.2_3_fifo_ls.png}
+    \screenAt[height=57mm,keepaspectratio]
+        {exercise-4-2-fifo-stat}{0mm}{0mm}{190mm}{img/lab1/4.2_3_fifo_stat.png}
+    \screenAt[height=73mm,keepaspectratio]
+        {exercise-4-2-socket}{0mm}{0mm}{190mm}{img/lab1/4.2_3_socket.png}
+    \screenAt[height=60mm,keepaspectratio]
+        {exercise-4-2-cdrom}{0mm}{0mm}{190mm}{img/lab1/4.2_3_symlink_cdrom.png}
+    %
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {13д};
+\end{tikzpicture}
+
+\clearpage
+\includepdf[pages=14-last]{tex/graphics/labs.pdf}
 
 \end{document}
