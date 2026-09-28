@@ -732,7 +732,191 @@
   }
 ]{tex/graphics/labs.pdf}
 
+\includepdf[
+  pages=19,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=38mm,yshift=-63mm]current page.north west)
+            {\hyperlink{ex61-a}{\textcolor{blue}{\underline{Результат пункта a: страница 19а.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=38mm,yshift=-107mm]current page.north west)
+            {\hyperlink{ex61-b}{\textcolor{blue}{\underline{Результат пункта b: страница 19б.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=38mm,yshift=-161mm]current page.north west)
+            {\hyperlink{ex61-c}{\textcolor{blue}{\underline{Результат пункта c: страница 19в.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=38mm,yshift=-213mm]current page.north west)
+            {\hyperlink{ex61-d}{\textcolor{blue}{\underline{Результат пункта d: страница 19г.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=38mm,yshift=-259mm]current page.north west)
+            {\hyperlink{ex61-e}{\textcolor{blue}{\underline{Результат пункта e: страница 19д.}}}};
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
+\includepdf[
+  pages=20,
+  pagecommand={%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=30mm,yshift=-20mm]current page.north west)
+            {\hyperlink{ex61-f}{\textcolor{blue}{\underline{Результат пункта f: страница 19д.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=30mm,yshift=-65mm]current page.north west)
+            {\hyperlink{ex61-g}{\textcolor{blue}{\underline{Результат пункта g: страница 19д.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=33mm,yshift=-143mm]current page.north west)
+            {\hyperlink{ex62-a}{\textcolor{blue}{\underline{Результат пункта a: страница 20а.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=33mm,yshift=-177mm]current page.north west)
+            {\hyperlink{ex62-b}{\textcolor{blue}{\underline{Результат пункта b: страница 20а.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=33mm,yshift=-219mm]current page.north west)
+            {\hyperlink{ex62-c}{\textcolor{blue}{\underline{Результат пункта c: страница 20б.}}}};
+        \node[anchor=north west,font=\fontsize{9}{11}\selectfont]
+            at ([xshift=33mm,yshift=-260mm]current page.north west)
+            {\hyperlink{ex62-d}{\textcolor{blue}{\underline{Результат пункта d: страница 20б.}}}};
+    \end{tikzpicture}%
+  }
+]{tex/graphics/labs.pdf}
+
 \clearpage
-\includepdf[pages=19-last]{tex/graphics/labs.pdf}
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex61-a}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункт a. Вывод текстового файла полностью и по частям};
+    \exerciseAnchor{exercise-6-1-extra-a-cat}{10mm}{28mm}
+    \exerciseAnchor{exercise-6-1-extra-a-head}{10mm}{87mm}
+    \exerciseAnchor{exercise-6-1-extra-a-tail}{10mm}{142mm}
+    \exerciseAnchor{exercise-6-1-extra-a-pages}{10mm}{205mm}
+    \screenAt[height=53mm,keepaspectratio]{exercise-6-1-extra-a-cat}{0mm}{0mm}{190mm}{img/lab1/6.1_a_cat_protocols.png}
+    \screenAt[height=50mm,keepaspectratio]{exercise-6-1-extra-a-head}{0mm}{0mm}{190mm}{img/lab1/6.1_a_head_protocols.png}
+    \screenAt[height=55mm,keepaspectratio]{exercise-6-1-extra-a-tail}{0mm}{0mm}{98mm}{img/lab1/6.1_a_tail_protocols.png}
+    \screenAt[height=48mm,keepaspectratio]{exercise-6-1-extra-a-pages}{0mm}{0mm}{93mm}{img/lab1/6.1_a_less_protocols.png}
+    \screenAt[height=48mm,keepaspectratio]{exercise-6-1-extra-a-pages}{97mm}{0mm}{93mm}{img/lab1/6.1_a_more_protocols.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {19а};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex61-b}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункт b. Шестнадцатеричное и восьмеричное представление};
+    \exerciseAnchor{exercise-6-1-extra-b-hexdump}{10mm}{34mm}
+    \exerciseAnchor{exercise-6-1-extra-b-octal}{10mm}{111mm}
+    \exerciseAnchor{exercise-6-1-extra-b-hex}{10mm}{189mm}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-b-hexdump}{0mm}{0mm}{190mm}{img/lab1/6.1_b_hexdump_bash.png}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-b-octal}{0mm}{0mm}{190mm}{img/lab1/6.1_b_od_octal_bash.png}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-b-hex}{0mm}{0mm}{190mm}{img/lab1/6.1_b_od_hex_bash.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {19б};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex61-c}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункт c. Сравнение текстовых и двоичных файлов};
+    \exerciseAnchor{exercise-6-1-extra-c-simple}{10mm}{31mm}
+    \exerciseAnchor{exercise-6-1-extra-c-diff1}{10mm}{68mm}
+    \exerciseAnchor{exercise-6-1-extra-c-diff2}{10mm}{137mm}
+    \exerciseAnchor{exercise-6-1-extra-c-comm}{10mm}{180mm}
+    \screenAt[height=29mm,keepaspectratio]{exercise-6-1-extra-c-simple}{0mm}{0mm}{80mm}{img/lab1/6.1_c_cmp_hosts.png}
+    \screenAt[height=29mm,keepaspectratio]{exercise-6-1-extra-c-simple}{84mm}{0mm}{51mm}{img/lab1/6.1_c_cmp_binaries.png}
+    \screenAt[height=29mm,keepaspectratio]{exercise-6-1-extra-c-simple}{139mm}{0mm}{51mm}{img/lab1/6.1_c_diff_binaries.png}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-c-diff1}{0mm}{0mm}{190mm}{img/lab1/6.1_c_diff_hosts_1.png}
+    \screenAt[height=38mm,keepaspectratio]{exercise-6-1-extra-c-diff2}{0mm}{0mm}{190mm}{img/lab1/6.1_c_diff_hosts_2.png}
+    \screenAt[height=102mm,keepaspectratio]{exercise-6-1-extra-c-comm}{0mm}{0mm}{145mm}{img/lab1/6.1_c_comm_hosts.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {19в};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex61-d}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункт d. Поиск строк в файле};
+    \exerciseAnchor{exercise-6-1-extra-d-file}{10mm}{30mm}
+    \exerciseAnchor{exercise-6-1-extra-d-filters}{10mm}{184mm}
+    \screenAt[height=143mm,keepaspectratio]{exercise-6-1-extra-d-file}{0mm}{0mm}{190mm}{img/lab1/6.1_d_grep_file.png}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-d-filters}{0mm}{0mm}{93mm}{img/lab1/6.1_d_grep_four_digits.png}
+    \screenAt[height=64mm,keepaspectratio]{exercise-6-1-extra-d-filters}{97mm}{0mm}{93mm}{img/lab1/6.1_d_grep_noncomment.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {19г};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex61-e}{}};
+    \node at (current page.north west) {\hypertarget{ex61-f}{}};
+    \node at (current page.north west) {\hypertarget{ex61-g}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункты e--g. Подсчёт, сортировка и извлечение полей};
+    \exerciseAnchor{exercise-6-1-extra-e}{10mm}{32mm}
+    \exerciseAnchor{exercise-6-1-extra-f}{10mm}{91mm}
+    \exerciseAnchor{exercise-6-1-extra-g}{10mm}{176mm}
+    \screenAt[height=48mm,keepaspectratio]{exercise-6-1-extra-e}{0mm}{0mm}{190mm}{img/lab1/6.1_e_wc_protocols.png}
+    \screenAt[height=80mm,keepaspectratio]{exercise-6-1-extra-f}{0mm}{0mm}{190mm}{img/lab1/6.1_f_sort_rpc.png}
+    \screenAt[height=105mm,keepaspectratio]{exercise-6-1-extra-g}{0mm}{0mm}{100mm}{img/lab1/6.1_g_cut_passwd.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {19д};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex62-a}{}};
+    \node at (current page.north west) {\hypertarget{ex62-b}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункты a--b. Обработка файла users};
+    \exerciseAnchor{exercise-6-2-extra-a-command}{10mm}{31mm}
+    \exerciseAnchor{exercise-6-2-extra-a-result}{10mm}{70mm}
+    \exerciseAnchor{exercise-6-2-extra-b-command}{10mm}{164mm}
+    \exerciseAnchor{exercise-6-2-extra-b-result}{10mm}{202mm}
+    \screenAt[height=32mm,keepaspectratio]{exercise-6-2-extra-a-command}{0mm}{0mm}{190mm}{img/lab1/6.2_a_create_users.png}
+    \screenAt[height=85mm,keepaspectratio]{exercise-6-2-extra-a-result}{0mm}{0mm}{85mm}{img/lab1/6.2_a_users_result.png}
+    \screenAt[height=31mm,keepaspectratio]{exercise-6-2-extra-b-command}{0mm}{0mm}{190mm}{img/lab1/6.2_b_uppercase_command.png}
+    \screenAt[height=82mm,keepaspectratio]{exercise-6-2-extra-b-result}{0mm}{0mm}{80mm}{img/lab1/6.2_b_uppercase_result.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {20а};
+\end{tikzpicture}
+
+\clearpage
+\thispagestyle{empty}
+\null
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west) {\hypertarget{ex62-c}{}};
+    \node at (current page.north west) {\hypertarget{ex62-d}{}};
+    \node[anchor=north west,font=\bfseries\fontsize{16}{19}\selectfont]
+        at ([xshift=10mm,yshift=-9mm]current page.north west) {Пункты c--d. Поиск файлов и каталогов};
+    \exerciseAnchor{exercise-6-2-extra-c-command}{10mm}{31mm}
+    \exerciseAnchor{exercise-6-2-extra-c-errors}{10mm}{68mm}
+    \exerciseAnchor{exercise-6-2-extra-c-result}{10mm}{96mm}
+    \exerciseAnchor{exercise-6-2-extra-d-command}{10mm}{175mm}
+    \exerciseAnchor{exercise-6-2-extra-d-result}{10mm}{207mm}
+    \screenAt[height=33mm,keepaspectratio]{exercise-6-2-extra-c-command}{0mm}{0mm}{190mm}{img/lab1/6.2_c_find_files.png}
+    \screenAt[height=20mm,keepaspectratio]{exercise-6-2-extra-c-errors}{0mm}{0mm}{190mm}{img/lab1/6.2_c_errors.png}
+    \screenAt[height=70mm,keepaspectratio]{exercise-6-2-extra-c-result}{0mm}{0mm}{190mm}{img/lab1/6.2_c_myfiles.png}
+    \screenAt[height=24mm,keepaspectratio]{exercise-6-2-extra-d-command}{0mm}{0mm}{190mm}{img/lab1/6.2_d_find_directories.png}
+    \screenAt[height=76mm,keepaspectratio]{exercise-6-2-extra-d-result}{0mm}{0mm}{155mm}{img/lab1/6.2_d_myfiles_tail.png}
+    \node[anchor=south east,font=\fontsize{10}{12}\selectfont]
+        at ([xshift=-10mm,yshift=8mm]current page.south east) {20б};
+\end{tikzpicture}
+
+\clearpage
+\includepdf[pages=21-last]{tex/graphics/labs.pdf}
 
 \end{document}
