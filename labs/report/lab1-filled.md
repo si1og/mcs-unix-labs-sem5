@@ -16,26 +16,17 @@
 
 4. Зафиксируйте приглашение к вводу имени пользователя и расшифруйте его составляющие:
 
+<img src="img/lab1/1.1_4.png" alt="4" style="max-width: 100%; height: auto;">
+
 5. В приглашении к вводу имени пользователя введите имя учетной записи student или другую доступную учетную запись.
 
 6. Зафиксируйте приглашение к вводу пароля и расшифруйте его составляющие:
 
+<img src="img/lab1/1.1_6.png" alt="6" style="max-width: 100%; height: auto;">
+
 7. В приглашении к вводу пароля введите password или другой установленный пароль. В случае правильного ввода имени пользователя и пароля появится приглашение к вводу команд.
 
 8. Зафиксируйте появившиеся сообщения и приглашение к вводу команд и расшифруйте его составляющие:
-
-
-### Результаты выполнения
-
-**4**
-
-<img src="img/lab1/1.1_4.png" alt="4" style="max-width: 100%; height: auto;">
-
-**6**
-
-<img src="img/lab1/1.1_6.png" alt="6" style="max-width: 100%; height: auto;">
-
-**8**
 
 <img src="img/lab1/1.1_8.png" alt="8" style="max-width: 100%; height: auto;">
 
@@ -46,46 +37,29 @@
 
 2. Зафиксируйте появляющееся сообщение от системы:
 
+<img src="img/lab1/1.2_2_2.png" alt="2 2" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/1.2_2_4.png" alt="2 4" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/1.2_2_6.png" alt="2 6" style="max-width: 100%; height: auto;">
+
 3. Проследите за появившимися приглашениями к вводу команд.
 
 4. При помощи команды tty, получите и зафиксируйте информацию о 2-ом, 4-ом и 6-ом виртуальном терминале соответственно:
+
+<img src="img/lab1/1.2_4_2.png" alt="4 2" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/1.2_4_4.png" alt="4 4" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/1.2_4_6.png" alt="4 6" style="max-width: 100%; height: auto;">
 
 5. Вернитесь на терминал #1.
 
 6. При помощи команды clear очистите терминал, проследите за реакцией системы.
 
-Примечание: если данное упражнение невыполнимо с использованием виртуальных терминалов, например, при использовании MacOS X или WSL, то выполните tty для эмулятора терминала.
-
-
-### Результаты выполнения
-
-**2 2**
-
-<img src="img/lab1/1.2_2_2.png" alt="2 2" style="max-width: 100%; height: auto;">
-
-**2 4**
-
-<img src="img/lab1/1.2_2_4.png" alt="2 4" style="max-width: 100%; height: auto;">
-
-**2 6**
-
-<img src="img/lab1/1.2_2_6.png" alt="2 6" style="max-width: 100%; height: auto;">
-
-**4 2**
-
-<img src="img/lab1/1.2_4_2.png" alt="4 2" style="max-width: 100%; height: auto;">
-
-**4 4**
-
-<img src="img/lab1/1.2_4_4.png" alt="4 4" style="max-width: 100%; height: auto;">
-
-**4 6**
-
-<img src="img/lab1/1.2_4_6.png" alt="4 6" style="max-width: 100%; height: auto;">
-
-**6**
-
 <img src="img/lab1/1.2_6.png" alt="6" style="max-width: 100%; height: auto;">
+
+Примечание: если данное упражнение невыполнимо с использованием виртуальных терминалов, например, при использовании MacOS X или WSL, то выполните tty для эмулятора терминала.
 
 
 ## Упражнение 1.3. Завершение сеанса
@@ -101,46 +75,29 @@
 
    - **a.** имя текущего пользователя:
 
-   - **b.** его идентификаторы UID, GID и идентификаторы вторичных групп:
-
-   - **c.** количество и имена пользователей, работающих в системе, их терминалы, время работы в системе и время входа в систему, выполняемые команды:
-
-   - **d.** системная дата и время:
-
-   - **e.** календарь текущего месяца:
-
-   - **f.** версия операционной системы компьютера:
-
-   - **g.** время работы операционной системы от момента запуска и нагрузку на операционную систему:
-
-
-### Результаты выполнения
-
-**A**
-
 <img src="img/lab1/1.4_a.png" alt="A" style="max-width: 100%; height: auto;">
 
-**B**
+   - **b.** его идентификаторы UID, GID и идентификаторы вторичных групп:
 
 <img src="img/lab1/1.4_b.png" alt="B" style="max-width: 100%; height: auto;">
 
-**C**
+   - **c.** количество и имена пользователей, работающих в системе, их терминалы, время работы в системе и время входа в систему, выполняемые команды:
 
 <img src="img/lab1/1.4_c.png" alt="C" style="max-width: 100%; height: auto;">
 
-**D**
+   - **d.** системная дата и время:
 
 <img src="img/lab1/1.4_d.png" alt="D" style="max-width: 100%; height: auto;">
 
-**E**
+   - **e.** календарь текущего месяца:
 
 <img src="img/lab1/1.4_e.png" alt="E" style="max-width: 100%; height: auto;">
 
-**F**
+   - **f.** версия операционной системы компьютера:
 
 <img src="img/lab1/1.4_f.png" alt="F" style="max-width: 100%; height: auto;">
 
-**G**
+   - **g.** время работы операционной системы от момента запуска и нагрузку на операционную систему:
 
 <img src="img/lab1/1.4_g.png" alt="G" style="max-width: 100%; height: auto;">
 
@@ -155,58 +112,36 @@
 
 4. При помощи команды: history получите историю ранее вводимых комманд и зафиксируйте три последние:
 
-5. Повторите любую ранее вводимую команду при помощи ссылки на ее номер: !n, где n - номер введенной ранее команды.
-
-
-### Результаты выполнения
-
-**4**
-
 <img src="img/lab1/1.5_4.png" alt="4" style="max-width: 100%; height: auto;">
+
+5. Повторите любую ранее вводимую команду при помощи ссылки на ее номер: !n, где n - номер введенной ранее команды.
 
 
 ## Упражнение 1.6. Свойства пользовательской учетной записи
 
 1. При помощи команды: passwd измените пароль учетной записи. Зафиксируйте появляющиеся сообщения:
 
-2. При помощи команды: finger посмотрите и зафиксируйте информацию о свойствах учетных записей student и суперпользователя соответственно:
-
-3. При помощи команды: chfn измените содержание информационного свойства (GECOS) учетной записи student. Зафиксируйте появляющиеся сообщения:
-
-4. При помощи команды: chsh измените начальный командный интерпретатор учетной записи student. Зафиксируйте появляющиеся сообщения:
-
-5. Посмотрите и зафиксируйте изменения в свойствах учетной записи student:
-
-6. Завершите сеанс работы пользователя в системе и заново войдите в систему, проследите за изменениями, произошедшими вследствие смены начального командного интерпретатора:
-
-
-### Результаты выполнения
-
-**1**
-
 <img src="img/lab1/1.6_1.png" alt="1" style="max-width: 100%; height: auto;">
 
-**2**
+2. При помощи команды: finger посмотрите и зафиксируйте информацию о свойствах учетных записей student и суперпользователя соответственно:
 
 <img src="img/lab1/1.6_2.png" alt="2" style="max-width: 100%; height: auto;">
 
-**3**
+3. При помощи команды: chfn измените содержание информационного свойства (GECOS) учетной записи student. Зафиксируйте появляющиеся сообщения:
 
 <img src="img/lab1/1.6_3.png" alt="3" style="max-width: 100%; height: auto;">
 
-**4**
+4. При помощи команды: chsh измените начальный командный интерпретатор учетной записи student. Зафиксируйте появляющиеся сообщения:
 
 <img src="img/lab1/1.6_4.png" alt="4" style="max-width: 100%; height: auto;">
 
-**5**
+5. Посмотрите и зафиксируйте изменения в свойствах учетной записи student:
 
 <img src="img/lab1/1.6_5.png" alt="5" style="max-width: 100%; height: auto;">
 
-**6 1**
+6. Завершите сеанс работы пользователя в системе и заново войдите в систему, проследите за изменениями, произошедшими вследствие смены начального командного интерпретатора:
 
 <img src="img/lab1/1.6_6_1.png" alt="6 1" style="max-width: 100%; height: auto;">
-
-**6 2**
 
 <img src="img/lab1/1.6_6_2.png" alt="6 2" style="max-width: 100%; height: auto;">
 
@@ -215,16 +150,9 @@
 
 1. При помощи команды: su измените контекст текущего пользователя student на контекст пользователя vinnie (или другого пользователя), и зафиксируйте его идентификаторы UID, GID и идентификаторы вторичных групп. Примечание: если второго пользователя в системе не существует, то добавьте его с помощью команд useradd и passwd:
 
-2. При помощи команды: exit вернитесь в контекст текущего пользователя student, убедитесь в этом, проверив его идентификаторы UID, GID и идентификаторы вторичных групп:
-
-
-### Результаты выполнения
-
-**1**
-
 <img src="img/lab1/1.7_1.png" alt="1" style="max-width: 100%; height: auto;">
 
-**2**
+2. При помощи команды: exit вернитесь в контекст текущего пользователя student, убедитесь в этом, проверив его идентификаторы UID, GID и идентификаторы вторичных групп:
 
 <img src="img/lab1/1.7_2.png" alt="2" style="max-width: 100%; height: auto;">
 
@@ -235,38 +163,23 @@
 
 2. При помощи команды write пошлите различные сообщения (завершая ввод каждого сообщения управляющим символом ^D - символом завершения ввода) пользователю vinnie, проследите за появляющимися на терминале пользователя vinnie сообщениями:
 
+<img src="img/lab1/1.8_2.png" alt="2" style="max-width: 100%; height: auto;">
+
 3. При помощи команды mesg отключите возможность приема сообщений пользователем vinnie. Попробуйте послать сообщения пользователю vinnie, проследите за появляющимися сообщениями:
 
+<img src="img/lab1/1.8_3.png" alt="3" style="max-width: 100%; height: auto;">
+
 4. При помощи команды wall пошлите сообщение всем пользователям сразу (завершая ввод каждого сообщения управляющим символом ^D - символом завершения ввода), проследите за появляющимися сообщениями:
+
+<img src="img/lab1/1.8_6_wall_in.png" alt="6 wall in" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/1.8_6_wall_out.png" alt="6 wall out" style="max-width: 100%; height: auto;">
 
 **Лабораторная работа зачтена:**
 
 **Дата:**
 
 **Подпись преподавателя:**
-
-
-### Результаты выполнения
-
-**2**
-
-<img src="img/lab1/1.8_2.png" alt="2" style="max-width: 100%; height: auto;">
-
-**3**
-
-<img src="img/lab1/1.8_3.png" alt="3" style="max-width: 100%; height: auto;">
-
-**4**
-
-<img src="img/lab1/1.8_4.png" alt="4" style="max-width: 100%; height: auto;">
-
-**6 wall in**
-
-<img src="img/lab1/1.8_6_wall_in.png" alt="6 wall in" style="max-width: 100%; height: auto;">
-
-**6 wall out**
-
-<img src="img/lab1/1.8_6_wall_out.png" alt="6 wall out" style="max-width: 100%; height: auto;">
 
 
 # Лабораторная работа 2. Работа со справочными системами
@@ -276,88 +189,53 @@
 
 1. При помощи команды: man man ознакомтесь со справкой по команде man. Зафиксируйте назначение команды man:
 
+<img src="img/lab1/2.1_1.png" alt="1" style="max-width: 100%; height: auto;">
+
 2. Страницы руководства выводятся на терминал постранично при помощи программы постраничной разбивки (PAGER). Вызовите встроенную справку по программе постраничной разбивки с помощью клавиши h. Ознакомьтесь с основами работы со справочной системой и зафиксируйте основные комбинации клавиш, используемые для навигации и поиска в справочной системе, а именно:
 
    - **a.** клавиши построчного и постраничного листания вверх и вниз:
 
-   - **b.** клавишу выхода из справочной системы:
-
-   - **c.** клавиши поиска информации в странице руководства:
-
-   - **d.** клавиши повторения предыдущего поиска:
-
-3. При помощи клавиш поиска и повторения поиска найдите на текущей странице все появления слова page, зафиксируйте использованные сочетания клавиш:
-
-4. При помощи команды: man &lt;номер раздела> intro ознакомьтесь с назначением всех восьми разделов справочной системы. Зафиксируйте их назначение:
-
-5. При помощи команды: whatis получите краткую справку по всем известным вам командам. Зафиксируйте и расшифруйте составляющие нескольких описаний команд:
-
-6. При помощи команды: apropos воспользуйтесь контекстным поиском справочной информации по любому ключевому слову. Зафиксируйте и расшифруйте составляющие нескольких найденных ссылок:
-
-
-### Результаты выполнения
-
-**1**
-
-<img src="img/lab1/2.1_1.png" alt="1" style="max-width: 100%; height: auto;">
-
-**2 a**
-
 <img src="img/lab1/2.1_2_a.png" alt="2 a" style="max-width: 100%; height: auto;">
 
-**2 b**
+   - **b.** клавишу выхода из справочной системы:
 
 <img src="img/lab1/2.1_2_b.png" alt="2 b" style="max-width: 100%; height: auto;">
 
-**2 c**
+   - **c.** клавиши поиска информации в странице руководства:
 
 <img src="img/lab1/2.1_2_c.png" alt="2 c" style="max-width: 100%; height: auto;">
 
-**2 d**
+   - **d.** клавиши повторения предыдущего поиска:
 
 <img src="img/lab1/2.1_2_d.png" alt="2 d" style="max-width: 100%; height: auto;">
 
-**3**
+3. При помощи клавиш поиска и повторения поиска найдите на текущей странице все появления слова page, зафиксируйте использованные сочетания клавиш:
 
 <img src="img/lab1/2.1_3.png" alt="3" style="max-width: 100%; height: auto;">
 
-**4 1**
+4. При помощи команды: man &lt;номер раздела> intro ознакомьтесь с назначением всех восьми разделов справочной системы. Зафиксируйте их назначение:
 
 <img src="img/lab1/2.1_4_1.png" alt="4 1" style="max-width: 100%; height: auto;">
 
-**4 2**
-
 <img src="img/lab1/2.1_4_2.png" alt="4 2" style="max-width: 100%; height: auto;">
-
-**4 3**
 
 <img src="img/lab1/2.1_4_3.png" alt="4 3" style="max-width: 100%; height: auto;">
 
-**4 4**
-
 <img src="img/lab1/2.1_4_4.png" alt="4 4" style="max-width: 100%; height: auto;">
-
-**4 5**
 
 <img src="img/lab1/2.1_4_5.png" alt="4 5" style="max-width: 100%; height: auto;">
 
-**4 6**
-
 <img src="img/lab1/2.1_4_6.png" alt="4 6" style="max-width: 100%; height: auto;">
-
-**4 7**
 
 <img src="img/lab1/2.1_4_7.png" alt="4 7" style="max-width: 100%; height: auto;">
 
-**4 8**
-
 <img src="img/lab1/2.1_4_8.png" alt="4 8" style="max-width: 100%; height: auto;">
 
-**5**
+5. При помощи команды: whatis получите краткую справку по всем известным вам командам. Зафиксируйте и расшифруйте составляющие нескольких описаний команд:
 
 <img src="img/lab1/2.1_5.png" alt="5" style="max-width: 100%; height: auto;">
 
-**6**
+6. При помощи команды: apropos воспользуйтесь контекстным поиском справочной информации по любому ключевому слову. Зафиксируйте и расшифруйте составляющие нескольких найденных ссылок:
 
 <img src="img/lab1/2.1_6.png" alt="6" style="max-width: 100%; height: auto;">
 
@@ -366,30 +244,17 @@
 
 1. При помощи команды: help help ознакомьтесь со справкой по команде help. Зафиксируйте назначение команды help:
 
+<img src="img/lab1/2.2_1.png" alt="1" style="max-width: 100%; height: auto;">
+
 2. При помощи команды: help выведите список встроенных команд bash.
 
 3. Посмотрите встроенную справку по командам: cd, history, logout, pwd. Зафиксируйте назначение этих команд:
 
-
-### Результаты выполнения
-
-**1**
-
-<img src="img/lab1/2.2_1.png" alt="1" style="max-width: 100%; height: auto;">
-
-**3 1**
-
 <img src="img/lab1/2.2_3_1.png" alt="3 1" style="max-width: 100%; height: auto;">
-
-**3 2**
 
 <img src="img/lab1/2.2_3_2.png" alt="3 2" style="max-width: 100%; height: auto;">
 
-**3 3**
-
 <img src="img/lab1/2.2_3_3.png" alt="3 3" style="max-width: 100%; height: auto;">
-
-**3 4**
 
 <img src="img/lab1/2.2_3_4.png" alt="3 4" style="max-width: 100%; height: auto;">
 
@@ -397,6 +262,8 @@
 ## Упражнение 2.3. Справочная система GNU Info
 
 1. При помощи команды: info info ознакомьтесь со справкой по команде info. Примечание: в системах отличных от GNU данная справочная система может остсутствовать. Зафиксируйте назначение команды info:
+
+<img src="img/lab1/2.3_1.png" alt="1" style="max-width: 100%; height: auto;">
 
 2. Вызовите встроенную справку по программе GNU Info с помощью клавиши h. Ознакомьтесь с основами работы со справочной системой и зафиксируйте основные комбинации клавиш, используемые для навигации и поиска в справочной системе, а именно:
 
@@ -419,13 +286,6 @@
 **Подпись преподавателя:**
 
 
-### Результаты выполнения
-
-**1**
-
-<img src="img/lab1/2.3_1.png" alt="1" style="max-width: 100%; height: auto;">
-
-
 # Лабораторная работа 3. Пользовательское окружение. Пользовательский профиль
 
 
@@ -433,15 +293,31 @@
 
 1. Посмотрите значение переменных окружения с помощью команды env. Зафиксируйте значения переменных окружения PATH, LANG, TERM:
 
+<img src="img/lab1/3.1_1_1.png" alt="1 1" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/3.1_1_2.png" alt="1 2" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/3.1_1_3.png" alt="1 3" style="max-width: 100%; height: auto;">
+
 2. Установите в переменную окружения PATH пустое значение.
 
+<img src="img/lab1/3.1_2.png" alt="2" style="max-width: 100%; height: auto;">
+
 3. Проследите за реакцией различных команд (date, man, ...). Зафиксируйте произошедшие изменения:
+
+<img src="img/lab1/3.1_3_1.png" alt="3 1" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/3.1_3_2.png" alt="3 2" style="max-width: 100%; height: auto;">
 
 4. Восстановите старое значение переменной окружения PATH.
 
 5. Установите в переменную окружения LANG значение любого языка в формате язык_[СТРАНА.[кодировка]].
 
+<img src="img/lab1/3.1_5.png" alt="5" style="max-width: 100%; height: auto;">
+
 6. Проследите за реакцией различных команд (date, man, ...). Зафиксируйте произошедшие изменения:
+
+<img src="img/lab1/3.1_6.png" alt="6" style="max-width: 100%; height: auto;">
 
 7. Восстановите старое значение переменной окружения LANG.
 
@@ -449,62 +325,19 @@
 
 9. Проследите за реакцией различных команд (mcedit, man, ...). Зафиксируйте произошедшие изменения:
 
+<img src="img/lab1/3.1_9_1.png" alt="9 1" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/3.1_9_2.png" alt="9 2" style="max-width: 100%; height: auto;">
+
 10. Восстановите старое значение переменной окружения TERM.
 
 11. Посмотрите значение внутренних переменных командного интерпретатора bash с помощью команды set. Зафиксируйте значение переменной PS1:
 
+<img src="img/lab1/3.1_11.png" alt="11" style="max-width: 100%; height: auto;">
+
 12. Установите во внутреннюю переменную PS1 любое значение.
 
 13. Проследите за реакцией командного интерпретатора. Зафиксируйте произошедшие изменения:
-
-
-### Результаты выполнения
-
-**1 1**
-
-<img src="img/lab1/3.1_1_1.png" alt="1 1" style="max-width: 100%; height: auto;">
-
-**1 2**
-
-<img src="img/lab1/3.1_1_2.png" alt="1 2" style="max-width: 100%; height: auto;">
-
-**1 3**
-
-<img src="img/lab1/3.1_1_3.png" alt="1 3" style="max-width: 100%; height: auto;">
-
-**2**
-
-<img src="img/lab1/3.1_2.png" alt="2" style="max-width: 100%; height: auto;">
-
-**3 1**
-
-<img src="img/lab1/3.1_3_1.png" alt="3 1" style="max-width: 100%; height: auto;">
-
-**3 2**
-
-<img src="img/lab1/3.1_3_2.png" alt="3 2" style="max-width: 100%; height: auto;">
-
-**5**
-
-<img src="img/lab1/3.1_5.png" alt="5" style="max-width: 100%; height: auto;">
-
-**6**
-
-<img src="img/lab1/3.1_6.png" alt="6" style="max-width: 100%; height: auto;">
-
-**9 1**
-
-<img src="img/lab1/3.1_9_1.png" alt="9 1" style="max-width: 100%; height: auto;">
-
-**9 2**
-
-<img src="img/lab1/3.1_9_2.png" alt="9 2" style="max-width: 100%; height: auto;">
-
-**11**
-
-<img src="img/lab1/3.1_11.png" alt="11" style="max-width: 100%; height: auto;">
-
-**13**
 
 <img src="img/lab1/3.1_13.png" alt="13" style="max-width: 100%; height: auto;">
 
@@ -515,7 +348,11 @@
 
 2. При помощи команды finger посмотрите и зафиксируйте изменения в свойствах пользователя student:
 
+<img src="img/lab1/3.2_2.png" alt="2" style="max-width: 100%; height: auto;">
+
 3. Отредактируйте файл .bashrc или .bash_profile в домашнем каталоге пользователя.
+
+<img src="img/lab1/3.2_3.png" alt="3" style="max-width: 100%; height: auto;">
 
 Примечание: если используется интерпретатор отличный от bash, то данные файлы не будут считаны, используйте .profile или специфичный для вашего интерпретатора файл конфигурации. Запишите в файл команду присвоения в переменной окружения LANG значение любого языка в формате язык_[СТРАНА.[кодировка]]:
 
@@ -523,40 +360,23 @@
 
 5. Проследите за реакцией различных команд (date, man, ...). Зафиксируйте произошедшие изменения:
 
+<img src="img/lab1/3.2_5.png" alt="5" style="max-width: 100%; height: auto;">
+
 6. Отредактируйте файл .bash_profile в домашнем каталоге пользователя. Запишите в него команду установки в переменную PS1 собственного cтрокового значения для приглашения командного интерпретатора:
+
+<img src="img/lab1/3.2_6.png" alt="6" style="max-width: 100%; height: auto;">
 
 7. Завершите сеанс пользователя. Войдите в систему с использованием учетной записи student.
 
 8. Проследите за реакцией командного интерпретатора. Зафиксируйте произошедшие изменения:
+
+<img src="img/lab1/3.2_8.png" alt="8" style="max-width: 100%; height: auto;">
 
 **Лабораторная работа зачтена:**
 
 **Дата:**
 
 **Подпись преподавателя:**
-
-
-### Результаты выполнения
-
-**2**
-
-<img src="img/lab1/3.2_2.png" alt="2" style="max-width: 100%; height: auto;">
-
-**3**
-
-<img src="img/lab1/3.2_3.png" alt="3" style="max-width: 100%; height: auto;">
-
-**5**
-
-<img src="img/lab1/3.2_5.png" alt="5" style="max-width: 100%; height: auto;">
-
-**6**
-
-<img src="img/lab1/3.2_6.png" alt="6" style="max-width: 100%; height: auto;">
-
-**8**
-
-<img src="img/lab1/3.2_8.png" alt="8" style="max-width: 100%; height: auto;">
 
 
 # Лабораторная работа 4. Файлы и файловая система UNIX
@@ -568,40 +388,34 @@
 
    - **a.** Перейдите в корневой каталог.
 
-   - **b.** Спускаясь по дереву каталогов, пройдитесь по основным каталогам и подкаталогам, и ознакомьтесь с их содержанием.
-
-   - **c.** Зафиксируйте структуру иерархии файловой системы и назначение основных каталогов:
-
-
-### Результаты выполнения
-
-**1 root 1**
-
 <img src="img/lab1/4.1_1_root_1.png" alt="1 root 1" style="max-width: 100%; height: auto;">
 
-**1 root 2**
-
-<img src="img/lab1/4.1_1_root_2.png" alt="1 root 2" style="max-width: 100%; height: auto;">
-
-**2 etc**
+   - **b.** Спускаясь по дереву каталогов, пройдитесь по основным каталогам и подкаталогам, и ознакомьтесь с их содержанием.
 
 <img src="img/lab1/4.1_2_etc.png" alt="2 etc" style="max-width: 100%; height: auto;">
 
-**2 home**
+<img src="img/lab1/4.1_2_usr.png" alt="2 usr" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.1_2_var.png" alt="2 var" style="max-width: 100%; height: auto;">
 
 <img src="img/lab1/4.1_2_home.png" alt="2 home" style="max-width: 100%; height: auto;">
 
-**2 home user**
-
 <img src="img/lab1/4.1_2_home_user.png" alt="2 home user" style="max-width: 100%; height: auto;">
 
-**2 usr**
+   - **c.** Зафиксируйте структуру иерархии файловой системы и назначение основных каталогов:
 
-<img src="img/lab1/4.1_2_usr.png" alt="2 usr" style="max-width: 100%; height: auto;">
-
-**2 var**
-
-<img src="img/lab1/4.1_2_var.png" alt="2 var" style="max-width: 100%; height: auto;">
+| Каталог | Назначение |
+|---|---|
+| `/` | Корень файловой системы. |
+| `/etc` | Системные настройки. |
+| `/home` | Домашние каталоги пользователей. |
+| `/usr` | Программы, библиотеки и общие данные. |
+| `/var` | Изменяемые данные и журналы. |
+| `/tmp` | Временные файлы. |
+| `/dev` | Файлы устройств. |
+| `/proc`, `/sys` | Интерфейсы ядра. |
+| `/run` | Данные работающих служб. |
+| `/boot` | Файлы загрузки. |
 
 
 ## Упражнение 4.2. Типы файлов
@@ -620,60 +434,57 @@
 
    - **f.** символическая ссылка (/dev/cdrom)
 
+Обозначение типа объекта первым символом в выводе `ls -l`:
+
+| Символ | Тип объекта |
+|---|---|
+| `-` | обычный файл |
+| `d` | каталог |
+| `b` | блочное устройство |
+| `c` | символьное устройство |
+| `p` | именованный канал (FIFO) |
+| `s` | сокет |
+| `l` | символическая ссылка |
+
+Поля строки `ls -l` слева направо:
+
+| Поле | Что обозначает |
+|---|---|
+| `-rw-r--r--` | тип объекта и права владельца, группы и остальных пользователей |
+| `1` | количество жёстких ссылок |
+| `root` | владелец |
+| `root` | группа |
+| `1234` | размер в байтах; для устройства — номера `major, minor` |
+| дата и время | время последнего изменения содержимого |
+| имя | имя объекта; у символической ссылки также выводится `-> цель` |
+
 Примечание: при отсутствии файлов из перечня найдите аналог соответствующего типа.
 
 2. Запишите особенности отображения различных типов файлов командой ls -l:
 
-3. Используя команды: stat, file исследуйте метаданные и содержимое различных типов файлов (из Шаг 1):
-
-
-### Результаты выполнения
-
-**2 ls types**
-
 <img src="img/lab1/4.2_2_ls_types.png" alt="2 ls types" style="max-width: 100%; height: auto;">
 
-**3 device block sda**
-
-<img src="img/lab1/4.2_3_device_block_sda.png" alt="3 device block sda" style="max-width: 100%; height: auto;">
-
-**3 device char tty1**
-
-<img src="img/lab1/4.2_3_device_char_tty1.png" alt="3 device char tty1" style="max-width: 100%; height: auto;">
-
-**3 directory tmp**
-
-<img src="img/lab1/4.2_3_directory_tmp.png" alt="3 directory tmp" style="max-width: 100%; height: auto;">
-
-**3 fifo ls**
-
-<img src="img/lab1/4.2_3_fifo_ls.png" alt="3 fifo ls" style="max-width: 100%; height: auto;">
-
-**3 fifo stat**
-
-<img src="img/lab1/4.2_3_fifo_stat.png" alt="3 fifo stat" style="max-width: 100%; height: auto;">
-
-**3 regular bash**
-
-<img src="img/lab1/4.2_3_regular_bash.png" alt="3 regular bash" style="max-width: 100%; height: auto;">
-
-**3 regular fstab file**
+3. Используя команды: stat, file исследуйте метаданные и содержимое различных типов файлов (из Шаг 1):
 
 <img src="img/lab1/4.2_3_regular_fstab_file.png" alt="3 regular fstab file" style="max-width: 100%; height: auto;">
 
-**3 regular fstab stat**
-
 <img src="img/lab1/4.2_3_regular_fstab_stat.png" alt="3 regular fstab stat" style="max-width: 100%; height: auto;">
 
-**3 socket**
+<img src="img/lab1/4.2_3_regular_bash.png" alt="3 regular bash" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.2_3_directory_tmp.png" alt="3 directory tmp" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.2_3_device_block_sda.png" alt="3 device block sda" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.2_3_device_char_tty1.png" alt="3 device char tty1" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.2_3_fifo_ls.png" alt="3 fifo ls" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.2_3_fifo_stat.png" alt="3 fifo stat" style="max-width: 100%; height: auto;">
 
 <img src="img/lab1/4.2_3_socket.png" alt="3 socket" style="max-width: 100%; height: auto;">
 
-**3 symlink apropos**
-
 <img src="img/lab1/4.2_3_symlink_apropos.png" alt="3 symlink apropos" style="max-width: 100%; height: auto;">
-
-**3 symlink cdrom**
 
 <img src="img/lab1/4.2_3_symlink_cdrom.png" alt="3 symlink cdrom" style="max-width: 100%; height: auto;">
 
@@ -686,78 +497,49 @@
 
    - **b.** получите информацию о текущем рабочем каталоге:
 
-   - **c.** получите информацию о содержимом текущего каталога:
-
-   - **d.** создайте новый подкаталог subdir в текущем каталоге:
-
-   - **e.** перейдите в него:
-
-   - **f.** создайте в данном подкаталоге новый файл myfirstfile:
-
-   - **g.** создайте мягкую symblink и жесткую hardlink ссылки на него:
-
-   - **h.** переместите и/или скопируйте файл myfirstfile в вышележащий каталог:
-
-   - **i.** удалите оставшиеся файлы:
-
-   - **j.** перейдите в вышележащий каталог и удалите созданный вами подкаталог subdir и файл myfirstfile:
-
-   - **k.** создайте именованный канал myfifo:
-
-   - **l.** создайте образ оптического диска, находящийся в накопителе /dev/cdrom:
-
-
-### Результаты выполнения
-
-**Ab home pwd**
-
 <img src="img/lab1/4.3_ab_home_pwd.png" alt="Ab home pwd" style="max-width: 100%; height: auto;">
 
-**C ls a**
+   - **c.** получите информацию о содержимом текущего каталога:
 
 <img src="img/lab1/4.3_c_ls_a.png" alt="C ls a" style="max-width: 100%; height: auto;">
 
-**D mkdir subdir**
+   - **d.** создайте новый подкаталог subdir в текущем каталоге:
 
 <img src="img/lab1/4.3_d_mkdir_subdir.png" alt="D mkdir subdir" style="max-width: 100%; height: auto;">
 
-**E cd subdir**
+   - **e.** перейдите в него:
 
 <img src="img/lab1/4.3_e_cd_subdir.png" alt="E cd subdir" style="max-width: 100%; height: auto;">
 
-**F touch myfirstfile**
+   - **f.** создайте в данном подкаталоге новый файл myfirstfile:
 
 <img src="img/lab1/4.3_f_touch_myfirstfile.png" alt="F touch myfirstfile" style="max-width: 100%; height: auto;">
 
-**G hardlink**
-
-<img src="img/lab1/4.3_g_hardlink.png" alt="G hardlink" style="max-width: 100%; height: auto;">
-
-**G symlink**
+   - **g.** создайте мягкую symblink и жесткую hardlink ссылки на него:
 
 <img src="img/lab1/4.3_g_symlink.png" alt="G symlink" style="max-width: 100%; height: auto;">
 
-**H move myfirstfile**
+<img src="img/lab1/4.3_g_hardlink.png" alt="G hardlink" style="max-width: 100%; height: auto;">
+
+   - **h.** переместите и/или скопируйте файл myfirstfile в вышележащий каталог:
 
 <img src="img/lab1/4.3_h_move_myfirstfile.png" alt="H move myfirstfile" style="max-width: 100%; height: auto;">
 
-**I remove remaining**
+   - **i.** удалите оставшиеся файлы:
 
 <img src="img/lab1/4.3_i_remove_remaining.png" alt="I remove remaining" style="max-width: 100%; height: auto;">
 
-**J cleanup**
+   - **j.** перейдите в вышележащий каталог и удалите созданный вами подкаталог subdir и файл myfirstfile:
 
 <img src="img/lab1/4.3_j_cleanup.png" alt="J cleanup" style="max-width: 100%; height: auto;">
 
-**K mkfifo**
+   - **k.** создайте именованный канал myfifo:
 
 <img src="img/lab1/4.3_k_mkfifo.png" alt="K mkfifo" style="max-width: 100%; height: auto;">
 
-**L copy cdrom**
+   - **l.** создайте образ оптического диска, находящийся в накопителе /dev/cdrom:
 
 <img src="img/lab1/4.3_l_copy_cdrom.png" alt="L copy cdrom" style="max-width: 100%; height: auto;">
-
-**L result**
 
 <img src="img/lab1/4.3_l_result.png" alt="L result" style="max-width: 100%; height: auto;">
 
@@ -768,40 +550,23 @@
 
    - **a.** найдите в каталоге /usr все файлы размером больше 800Кb
 
-   - **b.** найдите информацию о всех исполняемых файлах, страницах руководства и исходных текстах программы ls
-
-   - **c.** найдите информацию о местоположении программ bash, passwd, chsh, chfn, finger
-
-
-### Результаты выполнения
-
-**A find usr**
-
 <img src="img/lab1/4.4_a_find_usr.png" alt="A find usr" style="max-width: 100%; height: auto;">
 
-**B whereis ls**
+   - **b.** найдите информацию о всех исполняемых файлах, страницах руководства и исходных текстах программы ls
 
 <img src="img/lab1/4.4_b_whereis_ls.png" alt="B whereis ls" style="max-width: 100%; height: auto;">
 
-**C which bash**
+   - **c.** найдите информацию о местоположении программ bash, passwd, chsh, chfn, finger
 
 <img src="img/lab1/4.4_c_which_bash.png" alt="C which bash" style="max-width: 100%; height: auto;">
 
-**C which chfn**
-
-<img src="img/lab1/4.4_c_which_chfn.png" alt="C which chfn" style="max-width: 100%; height: auto;">
-
-**C which chsh**
+<img src="img/lab1/4.4_c_which_passwd.png" alt="C which passwd" style="max-width: 100%; height: auto;">
 
 <img src="img/lab1/4.4_c_which_chsh.png" alt="C which chsh" style="max-width: 100%; height: auto;">
 
-**C which finger**
+<img src="img/lab1/4.4_c_which_chfn.png" alt="C which chfn" style="max-width: 100%; height: auto;">
 
 <img src="img/lab1/4.4_c_which_finger.png" alt="C which finger" style="max-width: 100%; height: auto;">
-
-**C which passwd**
-
-<img src="img/lab1/4.4_c_which_passwd.png" alt="C which passwd" style="max-width: 100%; height: auto;">
 
 
 ## Упражнение 4.5. Операции с файловыми системами
@@ -810,60 +575,41 @@
 
    - **a.** примонтируйте файловую систему находящуюся на оптическом диске или флеш- накопителе, в каталог /mnt, проследите за сообщениями:
 
+<img src="img/lab1/4.5_1a_mount.png" alt="1a mount" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/4.5_1a_mount_check.png" alt="1a mount check" style="max-width: 100%; height: auto;">
+
    - **b.** размонтируйте находящуюся на оптическом диске или флеш-накопителе файловую систему, примонированную в каталог /mnt, и проследите за сообщениями:
+
+<img src="img/lab1/4.5_1b_umount.png" alt="1b umount" style="max-width: 100%; height: auto;">
 
 2. При помощи следующих команд: du, df подсчитайте:
 
    - **a.** место, занимаемое на диске домашнего каталога пользователя:
 
+<img src="img/lab1/4.5_2a_du_home.png" alt="2a du home" style="max-width: 100%; height: auto;">
+
    - **b.** место, занимаемое на диске каталогом /tmp
+
+<img src="img/lab1/4.5_2b_du_tmp.png" alt="2b du tmp" style="max-width: 100%; height: auto;">
 
    - **c.** размер корневой файловой системы
 
+<img src="img/lab1/4.5_2c_df_root.png" alt="2c df root" style="max-width: 100%; height: auto;">
+
    - **d.** размер файловой системы оптического диска или флеш-накопителя
 
+<img src="img/lab1/4.5_2d_df_mnt.png" alt="2d df mnt" style="max-width: 100%; height: auto;">
+
    - **e.** свободное место, оставшееся на корневой файловой системе
+
+<img src="img/lab1/4.5_2e_df_avail.png" alt="2e df avail" style="max-width: 100%; height: auto;">
 
 **Лабораторная работа зачтена:**
 
 **Дата:**
 
 **Подпись преподавателя:**
-
-
-### Результаты выполнения
-
-**1a mount**
-
-<img src="img/lab1/4.5_1a_mount.png" alt="1a mount" style="max-width: 100%; height: auto;">
-
-**1a mount check**
-
-<img src="img/lab1/4.5_1a_mount_check.png" alt="1a mount check" style="max-width: 100%; height: auto;">
-
-**1b umount**
-
-<img src="img/lab1/4.5_1b_umount.png" alt="1b umount" style="max-width: 100%; height: auto;">
-
-**2a du home**
-
-<img src="img/lab1/4.5_2a_du_home.png" alt="2a du home" style="max-width: 100%; height: auto;">
-
-**2b du tmp**
-
-<img src="img/lab1/4.5_2b_du_tmp.png" alt="2b du tmp" style="max-width: 100%; height: auto;">
-
-**2c df root**
-
-<img src="img/lab1/4.5_2c_df_root.png" alt="2c df root" style="max-width: 100%; height: auto;">
-
-**2d df mnt**
-
-<img src="img/lab1/4.5_2d_df_mnt.png" alt="2d df mnt" style="max-width: 100%; height: auto;">
-
-**2e df avail**
-
-<img src="img/lab1/4.5_2e_df_avail.png" alt="2e df avail" style="max-width: 100%; height: auto;">
 
 
 # Лабораторная работа 5. Владельцы и права доступа объектов файловой системы UNIX.
@@ -873,150 +619,90 @@
 
 1. Зафиксируйте права доступа к файлу и владельцев файлов из Шаг 1 упр. 4.2, лаб. 4:
 
-2. При помощи команд: chown, chgrp попробуйте подарить файлы из домашнего каталога пользователя student пользователю vinnie, группе root. Зафиксируйте реакцию системы:
-
-
-### Результаты выполнения
-
-**1 permissions owners**
-
 <img src="img/lab1/5.1_1_permissions_owners.png" alt="1 permissions owners" style="max-width: 100%; height: auto;">
 
-**2 chgrp denied**
+2. При помощи команд: chown, chgrp попробуйте подарить файлы из домашнего каталога пользователя student пользователю vinnie, группе root. Зафиксируйте реакцию системы:
 
-<img src="img/lab1/5.1_2_chgrp_denied.png" alt="2 chgrp denied" style="max-width: 100%; height: auto;">
-
-**2 chown denied**
-
-<img src="img/lab1/5.1_2_chown_denied.png" alt="2 chown denied" style="max-width: 100%; height: auto;">
-
-**2 ls giftfile**
+<img src="img/lab1/5.1_2_touch_giftfile.png" alt="2 touch giftfile" style="max-width: 100%; height: auto;">
 
 <img src="img/lab1/5.1_2_ls_giftfile.png" alt="2 ls giftfile" style="max-width: 100%; height: auto;">
 
-**2 touch giftfile**
+<img src="img/lab1/5.1_2_chown_denied.png" alt="2 chown denied" style="max-width: 100%; height: auto;">
 
-<img src="img/lab1/5.1_2_touch_giftfile.png" alt="2 touch giftfile" style="max-width: 100%; height: auto;">
+<img src="img/lab1/5.1_2_chgrp_denied.png" alt="2 chgrp denied" style="max-width: 100%; height: auto;">
 
 
 ## Упражнение 5.2. Права доступа к объектам файловой системы UNIX
 
 1. Создайте новый файл newfile. Зафиксируйте права доступа к файлу и владельцев полученного файла:
 
+<img src="img/lab1/5.2_1_touch_newfile.png" alt="1 touch newfile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_1_ls_newfile.png" alt="1 ls newfile" style="max-width: 100%; height: auto;">
+
 2. При помощи команды: umask:
 
    - **a.** просмотрите и зафиксируйте значение реверсной маски прав доступа по умолчанию для вновь создаваемых файлов
 
+<img src="img/lab1/5.2_2a_umask.png" alt="2a umask" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_2a_umask_symbolic.png" alt="2a umask symbolic" style="max-width: 100%; height: auto;">
+
    - **b.** установите значение реверсной маски прав доступа по умолчанию в 000. Создайте файл defaultfile. Зафиксируйте права доступа к файлу и владельцев полученного файла:
 
+<img src="img/lab1/5.2_2b_umask_000.png" alt="2b umask 000" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_2b_touch_defaultfile.png" alt="2b touch defaultfile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_2b_ls_defaultfile.png" alt="2b ls defaultfile" style="max-width: 100%; height: auto;">
+
    - **c.** установите значение реверсной маски прав доступа по умолчанию в 777. Создайте файл maskedfile. Зафиксируйте права доступа к файлу и владельцев полученного файла:
+
+<img src="img/lab1/5.2_2c_umask_777.png" alt="2c umask 777" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_2c_touch_maskedfile.png" alt="2c touch maskedfile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_2c_ls_maskedfile.png" alt="2c ls maskedfile" style="max-width: 100%; height: auto;">
 
 3. При помощи команды: chmod отработайте основные операции изменения владельцев и прав доступа к файлам:
 
    - **a.** создайте в домашнем каталоге файл privatefile и установите права доступа rw- --- ---:
 
+<img src="img/lab1/5.2_3a_touch_privatefile.png" alt="3a touch privatefile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3a_chmod_privatefile.png" alt="3a chmod privatefile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3a_ls_privatefile.png" alt="3a ls privatefile" style="max-width: 100%; height: auto;">
+
    - **b.** создайте в домашнем каталоге файл publicfile и установите права доступа rw- r-- r--:
+
+<img src="img/lab1/5.2_3b_touch_publicfile.png" alt="3b touch publicfile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3b_chmod_publicfile.png" alt="3b chmod publicfile" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3b_ls_publicfile.png" alt="3b ls publicfile" style="max-width: 100%; height: auto;">
 
    - **c.** создайте в домашнем каталоге новый каталог groupsubdir и установите права доступа rw- r-- ---:
 
+<img src="img/lab1/5.2_3c_mkdir_groupsubdir.png" alt="3c mkdir groupsubdir" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3c_chmod_groupsubdir.png" alt="3c chmod groupsubdir" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3c_ls_groupsubdir.png" alt="3c ls groupsubdir" style="max-width: 100%; height: auto;">
+
    - **d.** создайте в домашнем каталоге новый каталог publicdir и установите права доступа rw- rw- rw-:
+
+<img src="img/lab1/5.2_3d_mkdir_publicdir.png" alt="3d mkdir publicdir" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3d_chmod_publicdir.png" alt="3d chmod publicdir" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/5.2_3d_ls_publicdir.png" alt="3d ls publicdir" style="max-width: 100%; height: auto;">
 
 **Лабораторная работа зачтена:**
 
 **Дата:**
 
 **Подпись преподавателя:**
-
-
-### Результаты выполнения
-
-**1 ls newfile**
-
-<img src="img/lab1/5.2_1_ls_newfile.png" alt="1 ls newfile" style="max-width: 100%; height: auto;">
-
-**1 touch newfile**
-
-<img src="img/lab1/5.2_1_touch_newfile.png" alt="1 touch newfile" style="max-width: 100%; height: auto;">
-
-**2a umask**
-
-<img src="img/lab1/5.2_2a_umask.png" alt="2a umask" style="max-width: 100%; height: auto;">
-
-**2a umask symbolic**
-
-<img src="img/lab1/5.2_2a_umask_symbolic.png" alt="2a umask symbolic" style="max-width: 100%; height: auto;">
-
-**2b ls defaultfile**
-
-<img src="img/lab1/5.2_2b_ls_defaultfile.png" alt="2b ls defaultfile" style="max-width: 100%; height: auto;">
-
-**2b touch defaultfile**
-
-<img src="img/lab1/5.2_2b_touch_defaultfile.png" alt="2b touch defaultfile" style="max-width: 100%; height: auto;">
-
-**2b umask 000**
-
-<img src="img/lab1/5.2_2b_umask_000.png" alt="2b umask 000" style="max-width: 100%; height: auto;">
-
-**2c ls maskedfile**
-
-<img src="img/lab1/5.2_2c_ls_maskedfile.png" alt="2c ls maskedfile" style="max-width: 100%; height: auto;">
-
-**2c touch maskedfile**
-
-<img src="img/lab1/5.2_2c_touch_maskedfile.png" alt="2c touch maskedfile" style="max-width: 100%; height: auto;">
-
-**2c umask 777**
-
-<img src="img/lab1/5.2_2c_umask_777.png" alt="2c umask 777" style="max-width: 100%; height: auto;">
-
-**3a chmod privatefile**
-
-<img src="img/lab1/5.2_3a_chmod_privatefile.png" alt="3a chmod privatefile" style="max-width: 100%; height: auto;">
-
-**3a ls privatefile**
-
-<img src="img/lab1/5.2_3a_ls_privatefile.png" alt="3a ls privatefile" style="max-width: 100%; height: auto;">
-
-**3a touch privatefile**
-
-<img src="img/lab1/5.2_3a_touch_privatefile.png" alt="3a touch privatefile" style="max-width: 100%; height: auto;">
-
-**3b chmod publicfile**
-
-<img src="img/lab1/5.2_3b_chmod_publicfile.png" alt="3b chmod publicfile" style="max-width: 100%; height: auto;">
-
-**3b ls publicfile**
-
-<img src="img/lab1/5.2_3b_ls_publicfile.png" alt="3b ls publicfile" style="max-width: 100%; height: auto;">
-
-**3b touch publicfile**
-
-<img src="img/lab1/5.2_3b_touch_publicfile.png" alt="3b touch publicfile" style="max-width: 100%; height: auto;">
-
-**3c chmod groupsubdir**
-
-<img src="img/lab1/5.2_3c_chmod_groupsubdir.png" alt="3c chmod groupsubdir" style="max-width: 100%; height: auto;">
-
-**3c ls groupsubdir**
-
-<img src="img/lab1/5.2_3c_ls_groupsubdir.png" alt="3c ls groupsubdir" style="max-width: 100%; height: auto;">
-
-**3c mkdir groupsubdir**
-
-<img src="img/lab1/5.2_3c_mkdir_groupsubdir.png" alt="3c mkdir groupsubdir" style="max-width: 100%; height: auto;">
-
-**3d chmod publicdir**
-
-<img src="img/lab1/5.2_3d_chmod_publicdir.png" alt="3d chmod publicdir" style="max-width: 100%; height: auto;">
-
-**3d ls publicdir**
-
-<img src="img/lab1/5.2_3d_ls_publicdir.png" alt="3d ls publicdir" style="max-width: 100%; height: auto;">
-
-**3d mkdir publicdir**
-
-<img src="img/lab1/5.2_3d_mkdir_publicdir.png" alt="3d mkdir publicdir" style="max-width: 100%; height: auto;">
 
 
 # Лабораторная работа 6. Обработка текстовой информации. Управление вводом-выводом команд. Подстановки командного интерпретатора
@@ -1028,98 +714,55 @@
 
    - **a.** выведите текстовый файл (/etc/protocols) на экран полностью и по частям:
 
-   - **b.** выведите двоичный файл (/bin/bash) в шестнадцатеричном и восьмеричном виде:
-
-   - **c.** сравните текстовые (/etc/hosts.allow и /etc/hosts.deny) и двоичные (/bin/bash и /bin/sh) файлы:
-
-   - **d.** найдите все строки файла (/etc/services), содержащие слово file, затем строки содержащие четырехзначные числа, затем строки не начинающиеся со знака #:
-
-   - **e.** подсчитайте количество строк/слов/букв в файле (/etc/protocols):
-
-   - **f.** отсортируйте содержимое файла (/etc/rpc):
-
-   - **g.** извлеките из структурированного файла (/etc/passwd) первое поле всех строк:
-
-
-### Результаты выполнения
-
-**A cat protocols**
-
 <img src="img/lab1/6.1_a_cat_protocols.png" alt="A cat protocols" style="max-width: 100%; height: auto;">
-
-**A head protocols**
-
-<img src="img/lab1/6.1_a_head_protocols.png" alt="A head protocols" style="max-width: 100%; height: auto;">
-
-**A less protocols**
 
 <img src="img/lab1/6.1_a_less_protocols.png" alt="A less protocols" style="max-width: 100%; height: auto;">
 
-**A more protocols**
-
 <img src="img/lab1/6.1_a_more_protocols.png" alt="A more protocols" style="max-width: 100%; height: auto;">
-
-**A tail protocols**
 
 <img src="img/lab1/6.1_a_tail_protocols.png" alt="A tail protocols" style="max-width: 100%; height: auto;">
 
-**B hexdump bash**
+<img src="img/lab1/6.1_a_head_protocols.png" alt="A head protocols" style="max-width: 100%; height: auto;">
+
+   - **b.** выведите двоичный файл (/bin/bash) в шестнадцатеричном и восьмеричном виде:
 
 <img src="img/lab1/6.1_b_hexdump_bash.png" alt="B hexdump bash" style="max-width: 100%; height: auto;">
 
-**B od hex bash**
-
 <img src="img/lab1/6.1_b_od_hex_bash.png" alt="B od hex bash" style="max-width: 100%; height: auto;">
-
-**B od octal bash**
 
 <img src="img/lab1/6.1_b_od_octal_bash.png" alt="B od octal bash" style="max-width: 100%; height: auto;">
 
-**C cmp binaries**
-
-<img src="img/lab1/6.1_c_cmp_binaries.png" alt="C cmp binaries" style="max-width: 100%; height: auto;">
-
-**C cmp hosts**
+   - **c.** сравните текстовые (/etc/hosts.allow и /etc/hosts.deny) и двоичные (/bin/bash и /bin/sh) файлы:
 
 <img src="img/lab1/6.1_c_cmp_hosts.png" alt="C cmp hosts" style="max-width: 100%; height: auto;">
 
-**C comm hosts**
-
 <img src="img/lab1/6.1_c_comm_hosts.png" alt="C comm hosts" style="max-width: 100%; height: auto;">
-
-**C diff binaries**
-
-<img src="img/lab1/6.1_c_diff_binaries.png" alt="C diff binaries" style="max-width: 100%; height: auto;">
-
-**C diff hosts 1**
 
 <img src="img/lab1/6.1_c_diff_hosts_1.png" alt="C diff hosts 1" style="max-width: 100%; height: auto;">
 
-**C diff hosts 2**
-
 <img src="img/lab1/6.1_c_diff_hosts_2.png" alt="C diff hosts 2" style="max-width: 100%; height: auto;">
 
-**D grep file**
+<img src="img/lab1/6.1_c_cmp_binaries.png" alt="C cmp binaries" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/6.1_c_diff_binaries.png" alt="C diff binaries" style="max-width: 100%; height: auto;">
+
+   - **d.** найдите все строки файла (/etc/services), содержащие слово file, затем строки содержащие четырехзначные числа, затем строки не начинающиеся со знака #:
 
 <img src="img/lab1/6.1_d_grep_file.png" alt="D grep file" style="max-width: 100%; height: auto;">
 
-**D grep four digits**
-
 <img src="img/lab1/6.1_d_grep_four_digits.png" alt="D grep four digits" style="max-width: 100%; height: auto;">
-
-**D grep noncomment**
 
 <img src="img/lab1/6.1_d_grep_noncomment.png" alt="D grep noncomment" style="max-width: 100%; height: auto;">
 
-**E wc protocols**
+   - **e.** подсчитайте количество строк/слов/букв в файле (/etc/protocols):
 
 <img src="img/lab1/6.1_e_wc_protocols.png" alt="E wc protocols" style="max-width: 100%; height: auto;">
 
-**F sort rpc**
+   - **f.** отсортируйте содержимое файла (/etc/rpc):
 
 <img src="img/lab1/6.1_f_sort_rpc.png" alt="F sort rpc" style="max-width: 100%; height: auto;">
 
-**G cut passwd**
+   - **g.** извлеките из структурированного файла (/etc/passwd) первое поле всех строк:
 
 <img src="img/lab1/6.1_g_cut_passwd.png" alt="G cut passwd" style="max-width: 100%; height: auto;">
 
@@ -1130,54 +773,31 @@
 
    - **a.** вырежьте из файла /etc/passwd пятое поле, отсортируйте в обратном порядке и сохраните в файл users
 
-   - **b.** преобразуйте содержимое файла users к верхнему регистру
-
-   - **c.** найдите все регулярные файлы в принадлежащие пользователю student и сохраните найденный список в файле myfiles, ошибки поиска сохраните в файле errors
-
-   - **d.** найдите все каталоги принадлежащие пользователю student и добавьте полученный список в файл myfiles, подавите вывод сообщений об ошибках поиска
-
-   - **e.** подсчитайте суммарное количество обычных файлов в дереве каталогов UNIX
-
-
-### Результаты выполнения
-
-**A create users**
-
 <img src="img/lab1/6.2_a_create_users.png" alt="A create users" style="max-width: 100%; height: auto;">
-
-**A users result**
 
 <img src="img/lab1/6.2_a_users_result.png" alt="A users result" style="max-width: 100%; height: auto;">
 
-**B uppercase command**
+   - **b.** преобразуйте содержимое файла users к верхнему регистру
 
 <img src="img/lab1/6.2_b_uppercase_command.png" alt="B uppercase command" style="max-width: 100%; height: auto;">
 
-**B uppercase result**
-
 <img src="img/lab1/6.2_b_uppercase_result.png" alt="B uppercase result" style="max-width: 100%; height: auto;">
 
-**C errors**
-
-<img src="img/lab1/6.2_c_errors.png" alt="C errors" style="max-width: 100%; height: auto;">
-
-**C find files**
+   - **c.** найдите все регулярные файлы в принадлежащие пользователю student и сохраните найденный список в файле myfiles, ошибки поиска сохраните в файле errors
 
 <img src="img/lab1/6.2_c_find_files.png" alt="C find files" style="max-width: 100%; height: auto;">
 
-**C myfiles**
-
 <img src="img/lab1/6.2_c_myfiles.png" alt="C myfiles" style="max-width: 100%; height: auto;">
 
-**D find directories**
+<img src="img/lab1/6.2_c_errors.png" alt="C errors" style="max-width: 100%; height: auto;">
+
+   - **d.** найдите все каталоги принадлежащие пользователю student и добавьте полученный список в файл myfiles, подавите вывод сообщений об ошибках поиска
 
 <img src="img/lab1/6.2_d_find_directories.png" alt="D find directories" style="max-width: 100%; height: auto;">
 
-**D myfiles tail**
-
 <img src="img/lab1/6.2_d_myfiles_tail.png" alt="D myfiles tail" style="max-width: 100%; height: auto;">
 
-**E count regular files**
+   - **e.** подсчитайте суммарное количество обычных файлов в дереве каталогов UNIX
 
 <img src="img/lab1/6.2_e_count_regular_files.png" alt="E count regular files" style="max-width: 100%; height: auto;">
 
@@ -1236,6 +856,8 @@
 
    - **a.** команды посимвольного перемещения курсора:
 
+<img src="img/lab1/7.2_vim_navigation.png" alt="Vim navigation" style="max-width: 100%; height: auto;">
+
    - **b.** команды пословного перемещения курсора:
 
    - **c.** команды постраничного листания:
@@ -1246,7 +868,17 @@
 
    - **f.** команды вставки текста:
 
+<img src="img/lab1/7.2_vim_append.png" alt="Vim append" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/7.2_vim_insert.png" alt="Vim insert" style="max-width: 100%; height: auto;">
+
    - **g.** команды удаления текста:
+
+<img src="img/lab1/7.2_vim_delete_char.png" alt="Vim delete char" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/7.2_vim_delete_to_eol.png" alt="Vim delete to eol" style="max-width: 100%; height: auto;">
+
+<img src="img/lab1/7.2_vim_delete_word.png" alt="Vim delete word" style="max-width: 100%; height: auto;">
 
    - **h.** команды захвата текста:
 
@@ -1259,33 +891,6 @@
    - **l.** команды выхода из редактора:
 
 2. При помощи редактора vim отредактируйте файл .plan, куда внесите информацию о себе.
-
-
-### Результаты выполнения
-
-**Vim append**
-
-<img src="img/lab1/7.2_vim_append.png" alt="Vim append" style="max-width: 100%; height: auto;">
-
-**Vim delete char**
-
-<img src="img/lab1/7.2_vim_delete_char.png" alt="Vim delete char" style="max-width: 100%; height: auto;">
-
-**Vim delete to eol**
-
-<img src="img/lab1/7.2_vim_delete_to_eol.png" alt="Vim delete to eol" style="max-width: 100%; height: auto;">
-
-**Vim delete word**
-
-<img src="img/lab1/7.2_vim_delete_word.png" alt="Vim delete word" style="max-width: 100%; height: auto;">
-
-**Vim insert**
-
-<img src="img/lab1/7.2_vim_insert.png" alt="Vim insert" style="max-width: 100%; height: auto;">
-
-**Vim navigation**
-
-<img src="img/lab1/7.2_vim_navigation.png" alt="Vim navigation" style="max-width: 100%; height: auto;">
 
 
 ## Упражнение 7.3. Файловый менеджер UNIX - Midnight Commander

@@ -25,6 +25,40 @@ def natural_key(value: str) -> list[object]:
             for part in re.split(r"(\d+)", value)]
 
 
+def screenshot_sort_key(exercise: str, path: Path) -> tuple[object, ...]:
+    """Keep screenshots in the command order used to perform each task."""
+    if exercise == "5.2":
+        suffix = path.stem[len(exercise) + 1:]
+        command_order = {
+            "1_touch": 0,
+            "1_ls": 1,
+            "2a_umask.png": 0,
+            "2a_umask_symbolic": 1,
+            "2b_umask": 0,
+            "2b_touch": 1,
+            "2b_ls": 2,
+            "2c_umask": 0,
+            "2c_touch": 1,
+            "2c_ls": 2,
+            "3a_touch": 0,
+            "3a_chmod": 1,
+            "3a_ls": 2,
+            "3b_touch": 0,
+            "3b_chmod": 1,
+            "3b_ls": 2,
+            "3c_mkdir": 0,
+            "3c_chmod": 1,
+            "3c_ls": 2,
+            "3d_mkdir": 0,
+            "3d_chmod": 1,
+            "3d_ls": 2,
+        }
+        for prefix, rank in command_order.items():
+            if suffix.startswith(prefix.removesuffix(".png")):
+                return (rank, *natural_key(path.name))
+    return (99, *natural_key(path.name))
+
+
 def extract_pages() -> list[list[str]]:
     result = subprocess.run(
         ["pdftotext", "-raw", str(SOURCE_PDF), "-"],
@@ -81,17 +115,114 @@ def logical_blocks(pages: list[list[str]]) -> list[str]:
     return [re.sub(r"\s+", " ", block).strip() for block in blocks]
 
 
-def screenshot_map() -> dict[str, list[Path]]:
-    grouped: dict[str, list[Path]] = defaultdict(list)
+def image_target(exercise: str, path: Path) -> tuple[str | None, str | None]:
+    """Return ``(parent number, subpoint)`` encoded in an image name."""
+    suffix = path.stem[len(exercise) + 1:]
+
+    # A few early screenshots received descriptive names before the naming
+    # scheme was established.
+    if exercise == "4.1":
+        if suffix.startswith("1_root_"):
+            return None, "a"
+        if suffix.startswith("2_"):
+            return None, "b"
+    if exercise == "1.8" and suffix.startswith("6_wall"):
+        return "4", None
+    if exercise == "4.3" and suffix.startswith("ab_"):
+        return None, "b"
+    if exercise == "7.2":
+        if suffix == "vim_navigation":
+            return "1", "a"
+        if suffix in {"vim_insert", "vim_append"}:
+            return "1", "f"
+        if suffix.startswith("vim_delete"):
+            return "1", "g"
+
+    match = re.match(r"^(\d+)_([a-z])(?:_|$)", suffix)
+    if match:
+        return match.group(1), match.group(2)
+    match = re.match(r"^(\d+)([a-z])(?:_|$)", suffix)
+    if match:
+        return match.group(1), match.group(2)
+    match = re.match(r"^(\d+)(?:_|$)", suffix)
+    if match:
+        return match.group(1), None
+    match = re.match(r"^([a-z])(?:_|$)", suffix)
+    if match:
+        return None, match.group(1)
+    return None, None
+
+
+def screenshot_map() -> dict[
+        str, dict[tuple[str | None, str | None], list[Path]]]:
+    grouped: dict[
+        str, dict[tuple[str | None, str | None], list[Path]]
+    ] = defaultdict(lambda: defaultdict(list))
     for path in IMAGE_DIR.iterdir():
         if path.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
             continue
+        # These two crops show the same `ls /` output. Keep the first one so
+        # the report does not repeat an identical screenshot.
+        if path.name == "4.1_1_root_2.png":
+            continue
         match = re.match(r"^(\d+\.\d+)_", path.name)
         if match:
-            grouped[match.group(1)].append(path)
-    for paths in grouped.values():
-        paths.sort(key=lambda path: natural_key(path.name))
+            exercise = match.group(1)
+            grouped[exercise][image_target(exercise, path)].append(path)
+    for exercise, targets in grouped.items():
+        for paths in targets.values():
+            paths.sort(key=lambda path: screenshot_sort_key(exercise, path))
     return grouped
+
+
+def append_exercise_notes(output: list[str], exercise: str | None,
+                          marker: str | None) -> None:
+    """Insert concise observations that belong to a specific subpoint."""
+    if exercise == "4.2" and marker == "f":
+        output.extend([
+            "Обозначение типа объекта первым символом в выводе `ls -l`:",
+            "",
+            "| Символ | Тип объекта |",
+            "|---|---|",
+            "| `-` | обычный файл |",
+            "| `d` | каталог |",
+            "| `b` | блочное устройство |",
+            "| `c` | символьное устройство |",
+            "| `p` | именованный канал (FIFO) |",
+            "| `s` | сокет |",
+            "| `l` | символическая ссылка |",
+            "",
+            "Поля строки `ls -l` слева направо:",
+            "",
+            "| Поле | Что обозначает |",
+            "|---|---|",
+            "| `-rw-r--r--` | тип объекта и права владельца, группы и остальных пользователей |",
+            "| `1` | количество жёстких ссылок |",
+            "| `root` | владелец |",
+            "| `root` | группа |",
+            "| `1234` | размер в байтах; для устройства — номера `major, minor` |",
+            "| дата и время | время последнего изменения содержимого |",
+            "| имя | имя объекта; у символической ссылки также выводится `-> цель` |",
+            "",
+        ])
+        return
+    if exercise != "4.1" or marker != "c":
+        return
+    output.extend([
+        "| Каталог | Назначение |",
+        "|---|---|",
+        "| `/` | Корень файловой системы. |",
+        "| `/etc` | Системные настройки. |",
+        "| `/home` | Домашние каталоги пользователей. |",
+        "| `/usr` | Программы, библиотеки и общие данные. |",
+        "| `/var` | Изменяемые данные и журналы. |",
+        "| `/tmp` | Временные файлы. |",
+        "| `/dev` | Файлы устройств. |",
+        "| `/proc`, `/sys` | Интерфейсы ядра. |",
+        "| `/run` | Данные работающих служб. |",
+        "| `/boot` | Файлы загрузки. |",
+        "",
+    ])
 
 
 def escape_markdown(text: str) -> str:
@@ -104,22 +235,49 @@ def image_title(path: Path) -> str:
     return label[:1].upper() + label[1:]
 
 
-def append_images(output: list[str], exercise: str,
-                  images: dict[str, list[Path]]) -> None:
-    paths = images.get(exercise, [])
-    if not paths:
-        return
-    output.extend(["", "### Результаты выполнения", ""])
+def append_image_paths(output: list[str], paths: list[Path],
+                       used: set[Path]) -> None:
     for path in paths:
+        if path in used:
+            continue
         relative = path.relative_to(REPORT_DIR).as_posix()
         title = image_title(path)
-        output.append(f"**{title}**")
-        output.append("")
+        used.add(path)
         output.append(
             f'<img src="{relative}" alt="{title}" '
             'style="max-width: 100%; height: auto;">'
         )
         output.append("")
+
+
+def append_target_images(
+    output: list[str],
+    exercise: str | None,
+    parent: str | None,
+    marker: str | None,
+    images: dict[str, dict[tuple[str | None, str | None], list[Path]]],
+    used: set[Path],
+) -> None:
+    if not exercise:
+        return
+    targets = images.get(exercise, {})
+    keys = [(parent, marker)]
+    if marker is not None:
+        keys.append((None, marker))
+    for key in keys:
+        append_image_paths(output, targets.get(key, []), used)
+
+
+def append_remaining_images(
+    output: list[str],
+    exercise: str | None,
+    images: dict[str, dict[tuple[str | None, str | None], list[Path]]],
+    used: set[Path],
+) -> None:
+    if not exercise:
+        return
+    for paths in images.get(exercise, {}).values():
+        append_image_paths(output, paths, used)
 
 
 def build_markdown() -> str:
@@ -134,6 +292,8 @@ def build_markdown() -> str:
         "",
     ]
     current_exercise: str | None = None
+    current_parent: str | None = None
+    used_images: set[Path] = set()
 
     for block in blocks:
         lab_match = re.match(r"^Лабораторная работа\s+(\d+)\.\s*(.*)$", block,
@@ -143,16 +303,20 @@ def build_markdown() -> str:
 
         if lab_match:
             if current_exercise:
-                append_images(output, current_exercise, images)
+                append_remaining_images(output, current_exercise, images,
+                                        used_images)
                 current_exercise = None
+                current_parent = None
             output.extend(["", f"# Лабораторная работа {lab_match.group(1)}. "
                            f"{escape_markdown(lab_match.group(2))}", ""])
             continue
 
         if exercise_match:
             if current_exercise:
-                append_images(output, current_exercise, images)
+                append_remaining_images(output, current_exercise, images,
+                                        used_images)
             current_exercise = exercise_match.group(1)
+            current_parent = None
             heading_text = exercise_match.group(2)
             intro = ""
             intro_match = re.search(r"\s+(?=(?:При помощи|Примечание:))",
@@ -170,8 +334,10 @@ def build_markdown() -> str:
                     r"Реализация алгоритма сценария)", block,
                     flags=re.IGNORECASE):
             if current_exercise:
-                append_images(output, current_exercise, images)
+                append_remaining_images(output, current_exercise, images,
+                                        used_images)
                 current_exercise = None
+                current_parent = None
             level = "#" if block.lower().startswith("основы") else "##"
             output.extend(["", f"{level} {escape_markdown(block)}", ""])
             continue
@@ -181,6 +347,7 @@ def build_markdown() -> str:
         lettered = re.match(r"^([a-zа-я])\.\s*(.*)$", text,
                             flags=re.IGNORECASE)
         if numbered:
+            current_parent = numbered.group(1)
             output.append(f"{numbered.group(1)}. {numbered.group(2)}")
         elif lettered:
             output.append(f"   - **{lettered.group(1)}.** {lettered.group(2)}")
@@ -193,8 +360,17 @@ def build_markdown() -> str:
             output.append(text)
         output.append("")
 
+        if numbered:
+            append_target_images(output, current_exercise, current_parent,
+                                 None, images, used_images)
+        elif lettered:
+            append_target_images(output, current_exercise, current_parent,
+                                 lettered.group(1).lower(), images, used_images)
+            append_exercise_notes(output, current_exercise,
+                                  lettered.group(1).lower())
+
     if current_exercise:
-        append_images(output, current_exercise, images)
+        append_remaining_images(output, current_exercise, images, used_images)
 
     return "\n".join(output).rstrip() + "\n"
 
