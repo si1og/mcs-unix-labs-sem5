@@ -718,7 +718,7 @@
 
 ![A cat protocols](img/lab1/6.1_a_cat_protocols.png)
 
-![A less protocols](img/lab1/6.1_a_less_protocols.png)
+![Вывод файла /usr/etc/protocols по частям командой less](img/lab1/6.1_a_less_protocols.png)
 
 ![A more protocols](img/lab1/6.1_a_more_protocols.png)
 
@@ -748,13 +748,15 @@
 
    - **d.** найдите все строки файла (/etc/services), содержащие слово file, затем строки содержащие четырехзначные числа, затем строки не начинающиеся со знака #:
 
-![D grep file](img/lab1/6.1_d_grep_file.png)
+![Поиск строк со словом file в /usr/etc/services командой grep](img/lab1/6.1_d_grep_file.png)
 
-![D grep four digits](img/lab1/6.1_d_grep_four_digits.png)
+![Поиск отдельных четырёхзначных чисел в /usr/etc/services командой grep](img/lab1/6.1_d_grep_four_digits.png)
 
 ![D grep noncomment](img/lab1/6.1_d_grep_noncomment.png)
 
    - **e.** подсчитайте количество строк/слов/букв в файле (/etc/protocols):
+
+![Описание счётчиков строк, слов и байтов команды wc](img/lab1/6.1_e_wc_description.png)
 
 ![E wc protocols](img/lab1/6.1_e_wc_protocols.png)
 
