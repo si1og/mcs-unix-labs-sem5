@@ -1061,6 +1061,62 @@
 
 При помощи файлового менеджера mc выполните пункты лаб. 4 и лаб. 5.
 
+Навигация по корневому и домашнему каталогам при помощи двухпанельного интерфейса Midnight Commander:
+
+![Навигация по корневому и домашнему каталогам](img/lab1/7.3_navigation_root.png)
+
+Просмотр содержимого каталога `/dev` и специальных файлов устройств:
+
+![Просмотр каталога dev](img/lab1/7.3_navigation_dev.png)
+
+Создание подкаталога `subdir` в домашнем каталоге при помощи команды `F7`:
+
+![Создание каталога subdir](img/lab1/7.3_create_subdir.png)
+
+Создание и сохранение файла `myfirstfile` во встроенном редакторе Midnight Commander:
+
+![Создание файла myfirstfile](img/lab1/7.3_edit_myfirstfile.png)
+
+Копирование файла `myfirstfile` из каталога `subdir` в домашний каталог при помощи команды `F5`:
+
+![Копирование файла myfirstfile](img/lab1/7.3_copy_myfirstfile.png)
+
+Перемещение и переименование скопированного файла в `firstfile` при помощи команды `F6`:
+
+![Перемещение и переименование файла](img/lab1/7.3_move_firstfile.png)
+
+Создание символической ссылки `firstfilelink` на файл `firstfile`:
+
+![Создание символической ссылки](img/lab1/7.3_symlink_firstfile.png)
+
+Поиск файлов по шаблону `*first*` средствами Midnight Commander:
+
+![Поиск файлов по шаблону](img/lab1/7.3_search_first.png)
+
+Назначение общедоступных прав `rw-rw-rw-` файлу `firstfile` через диалог команды `chmod`:
+
+![Установка прав файла firstfile](img/lab1/7.3_chmod_firstfile_dialog.png)
+
+Просмотр результата назначения прав файлу `firstfile`:
+
+![Права доступа файла firstfile](img/lab1/7.3_permissions_firstfile.png)
+
+Установка прав `rw-------` файлу `privatefile` через диалог команды `chmod`:
+
+![Установка прав файла privatefile](img/lab1/7.3_chmod_privatefile_dialog.png)
+
+Создание файлов `privatefile` и `publicfile` с различными правами доступа:
+
+![Сравнение прав privatefile и publicfile](img/lab1/7.3_permissions_private_public.png)
+
+Настройка прав доступа каталога `publicdir` через диалог команды `chmod`:
+
+![Настройка прав каталога publicdir](img/lab1/7.3_permissions_publicdir.png)
+
+Удаление непустого каталога `subdir` вместе с его содержимым при помощи команды `F8`:
+
+![Удаление каталога subdir](img/lab1/7.3_delete_subdir.png)
+
 
 ## Упражнение 7.4. Подсистемы отложенных и периодических заданий.
 
