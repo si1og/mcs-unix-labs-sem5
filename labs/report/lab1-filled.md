@@ -1847,21 +1847,75 @@ Blackbox собран из исходников [bbidulock/blackboxwm](https://g
 
 1. Установите систему печати cups:
 
+Пакет `cups` уже был установлен при выполнении упражнения 10.2.
+
+![Проверка пакета и службы CUPS](img/lab1/11.1_cups_status.png)
+
 2. Установите виртуальный драйвер для печати в PDF в систему печати cups:
 
+Драйвер [CUPS-PDF 3.0.3](https://www.cups-pdf.de/download.shtml) собран из исходников командой из каталога `~/src/cups-pdf-3.0.3` (заголовки CUPS распакованы в `deps/usr/include`):
+
+```bash
+gcc -O2 -I "$PWD/deps/usr/include" cups-pdf-3.0.3/src/cups-pdf.c -o cups-pdf -l:libcups.so.2
+```
+
+![Установка CUPS-PDF и перезапуск службы](img/lab1/11.1_cups_pdf_install.png)
+
 3. Используя браузер в графической среде, зайдите по адресу http://127.0.0.1:631 и добавьте принтер с именем LocalPrinter использующий драйвер PDF.
+
+В браузере открыта главная страница веб-интерфейса CUPS:
+
+![Главная страница веб-интерфейса CUPS](img/lab1/11.1_cups_web_home.png)
+
+![Раздел администрирования CUPS](img/lab1/11.1_cups_administration.png)
+
+![Выбор виртуального PDF-принтера](img/lab1/11.1_cups_pdf_device.png)
+
+![Имя и соединение принтера LocalPrinter](img/lab1/11.1_localprinter_details.png)
+
+![Выбор способа указания драйвера для LocalPrinter](img/lab1/11.1_localprinter_driver_selection.png)
+
+![Указанный PPD-файл драйвера CUPS-PDF](img/lab1/11.1_localprinter_ppd.png)
+
+![Подтверждение создания принтера LocalPrinter](img/lab1/11.1_localprinter_added.png)
 
 4. При помощи команд lpr, lpq, lprm (lp, lpstat, cancel):
 
    - **a.** просмотрите состояния принтера с именем LocalPrinter:
 
+     ![Состояние принтера LocalPrinter](img/lab1/11.1_printer_status.png)
+
    - **b.** распечатайте любой файл на принтере LocalPrinter, проследите за сообщениями:
+
+     В конфигурации CUPS-PDF указан каталог вывода по умолчанию `/var/spool/cups-pdf/${USER}`.
+
+     ![Каталог сохранения PDF по умолчанию в конфигурации CUPS-PDF](img/lab1/11.1_default_pdf_directory.png)
+
+     ![Печать файла hostname на LocalPrinter и проверка очереди](img/lab1/11.1_print_hostname.png)
+
+     ![Просмотр напечатанного файла hostname.pdf](img/lab1/11.1_hostname_pdf.png)
 
    - **c.** просмотрите состояния принтера LocalPrinter, проследите за сообщениями:
 
+     После выполнения печати в выводе `lpq -P LocalPrinter` на снимке пункта **b** видно, что очередь пуста.
+
    - **d.** удалите задание на печать из очереди принтера LocalPrinter, проследите за сообщениями:
 
+     Задание отправлено с параметром `-o job-hold-until=indefinite`, чтобы оно осталось в очереди до вызова `cancel`.
+
+     ![Удержание задания, просмотр очереди и отмена печати](img/lab1/11.1_cancel_held_job.png)
+
    - **e.** распечатайте любую известную страницу руководства man на принтере LocalPrinter, проследите за сообщениями:
+
+     ![Печать страницы man ls на LocalPrinter](img/lab1/11.1_print_man_page.png)
+
+     ![Просмотр напечатанной страницы man ls](img/lab1/11.1_man_pdf.png)
+
+     | Элемент | Значение |
+     |---|---|
+     | `-T` у `man` | Выводит страницу через устройство форматирования `groff`, указанное после ключа. |
+     | `ps` в `-Tps` | Устройство `ps`: результат форматирования — PostScript. |
+
 
 **Лабораторная работа зачтена:**
 
